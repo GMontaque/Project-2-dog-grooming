@@ -1,5 +1,10 @@
 .test {
-  color: orange; }
+  color: purple;
+  font-weight: 800; }
 
 .house {
   font-size: 1rem; }
+
+.nav {
+  border: red 2px solid;
+  background-color: yellow; }
