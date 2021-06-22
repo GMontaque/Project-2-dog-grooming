@@ -1,1 +1,26 @@
-.test{color:purple;font-weight:800}.house{font-size:1rem}.nav{border:red 2px solid;background-color:yellow}
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /*1rem = 10px, 10px/16px = 62.5%*/ }
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(7, 1fr); }
+
+.test {
+  color: purple;
+  font-weight: 800; }
+
+.nav {
+  border: red 2px solid;
+  background-color: yellow; }
