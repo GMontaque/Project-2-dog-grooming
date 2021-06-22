@@ -1,0 +1,29 @@
+@import "base/baseCss";
+@import "base/color";
+@import "base/typography";
+
+@import "components/buttons";
+@import "components/gallery";
+@import "components/navigation";
+
+@import "layout/footer";
+@import "layout/grid";
+@import "layout/header";
+
+@import "pages/aboutAndContactME";
+@import "pages/accessories";
+@import "pages/galleryAndReviews";
+@import "pages/index";
+@import "pages/services";
+
+@import "utils/mixins";
+@import "utils/variables";
+
+.house {
+	font-size: 1rem;
+}
+
+.nav {
+	border: red 2px solid;
+	background-color: yellow;
+}
