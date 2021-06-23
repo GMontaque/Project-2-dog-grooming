@@ -1,12 +1,12 @@
-.nav{
-    height: 100vh;
-    width: 30vw;
+.nav {
+	height: 100vh;
+	width: 30vw;
 
-    &-active::before{
-        content: "“";
-    }
+	&-active::before {
+		content: "“";
+	}
 
-    &-active::after{
-        content:  "”";
-    }
+	&-active::after {
+		content: "”";
+	}
 }
