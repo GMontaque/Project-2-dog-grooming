@@ -16,6 +16,11 @@ html {
 
 body {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: repeat(7, 1fr);
+	grid-template-columns: min-content 1fr;
+	grid-auto-columns: min-content 1fr;
+	grid-template-rows: repeat(5, 1fr);
+}
+
+.gridStart{
+    grid-column-start: 2;
 }
