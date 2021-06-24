@@ -1,6 +1,11 @@
 .nav {
 	height: 100vh;
 	width: 30vw;
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	// display: grid;
+	// grid-template-columns: minmax(100%);
 
 	&-active::before {
 		content: "“";
@@ -8,5 +13,9 @@
 
 	&-active::after {
 		content: "”";
+	}
+
+	&-item {
+		list-style: none;
 	}
 }
