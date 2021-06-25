@@ -11,7 +11,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-  /*1rem = 10px, 10px/16px = 62.5%*/ }
+  /*! 1rem = 10px, 10px/16px = 62.5%*/ }
 
 .container {
   display: grid;
@@ -29,13 +29,56 @@ html {
   width: 30vw;
   position: fixed;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: center; }
+  .nav-logo {
+    /*! logo image nav bar*/
+    width: 70%;
+    height: auto;
+    margin: 3rem; }
   .nav-active::before {
     content: "“"; }
   .nav-active::after {
     content: "”"; }
+  .nav li:first-of-type {
+    /*! style for first nav link*/
+    border-top: solid 2px black; }
+  .nav li:last-of-type {
+    /*! style for last nav link */
+    margin-bottom: 9rem; }
   .nav-item {
-    list-style: none; }
+    /*! nav links*/
+    list-style: none;
+    width: 100%;
+    left: 0;
+    border-bottom: solid 2px black;
+    padding: 2rem 0rem; }
+    .nav-item a {
+      text-decoration: none;
+      margin-left: 3rem;
+      font-size: 2rem;
+      font-weight: 560; }
+  .nav-socialLinks {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    font-size: 4rem;
+    margin-bottom: 3rem; }
+  .nav-phone {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 2rem;
+    margin-bottom: 1rem; }
+    .nav-phone_text {
+      margin-left: 0.5rem; }
+  .nav-email {
+    display: flex;
+    flex-direction: row;
+    font-size: 2rem; }
+    .nav-email_text {
+      margin-left: 0.5rem; }
 
 .nav {
   border: red 2px solid;
