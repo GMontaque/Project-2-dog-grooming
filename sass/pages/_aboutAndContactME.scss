@@ -1,0 +1,17 @@
+.personal {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+
+	&-title {
+		grid-column: 1 / span 2;
+	}
+
+	&-text {
+		margin: 0rem 3rem;
+	}
+}
+
+.contact {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}

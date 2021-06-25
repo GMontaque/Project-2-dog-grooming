@@ -10,18 +10,19 @@
 
 	&-logo {
 		/*! logo image nav bar*/
-		width: 70%;
+		width: 50%;
 		height: auto;
-
 		margin: 3rem;
 	}
 
 	&-active::before {
-		content: "“";
+		content: '"';
+		// content: '<i class=" fas fa-paw "></i>';
 	}
 
 	&-active::after {
-		content: "”";
+		content: '"';
+		// content: '<i class=" fas fa-paw "></i>';
 	}
 
 	li:first-of-type {
@@ -31,7 +32,7 @@
 
 	li:last-of-type {
 		/*! style for last nav link */
-		margin-bottom: 9rem;
+		margin-bottom: 3rem;
 	}
 
 	&-item {
@@ -40,11 +41,11 @@
 		width: 100%;
 		left: 0;
 		border-bottom: solid 2px black;
-		padding: 2rem 0rem;
+		padding: 1.5rem 0rem;
 
 		& a {
 			text-decoration: none;
-			margin-left: 3rem;
+			margin: 0rem 3rem;
 			font-size: 2rem;
 			font-weight: 560;
 		}
