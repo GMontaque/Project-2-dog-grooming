@@ -15,8 +15,8 @@ html {
 .container {
   display: grid;
   position: absolute;
-  margin-left: 31vw;
-  grid-template-columns: 1fr;
+  margin-left: 30.5vw;
+  grid-template-columns: 69.4vw;
   grid-template-rows: repeat(5, auto); }
 
 .test {
@@ -101,6 +101,10 @@ html {
   grid-template-rows: auto auto;
   justify-items: center; }
 
+.productsList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+
 .pageTop {
   display: grid;
   grid-template-columns: 1fr;
@@ -155,3 +159,12 @@ html {
     .featured-link_button {
       width: 50%;
       margin: 0rem auto; }
+
+.servicesTitle {
+  text-align: center; }
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+  .products-service {
+    color: black; }
