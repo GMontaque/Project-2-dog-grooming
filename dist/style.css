@@ -17,7 +17,7 @@ html {
   position: absolute;
   margin-left: 31vw;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(5, 1fr); }
+  grid-template-rows: repeat(5, auto); }
 
 .test {
   color: purple;
@@ -95,10 +95,16 @@ html {
   display: grid;
   grid-template-columns: repeat(2, 1fr); }
 
+.accessories {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  justify-items: center; }
+
 .pageTop {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr); }
+  grid-template-rows: repeat(3, auto); }
   .pageTop-img1 {
     grid-row: 1;
     display: flex;
@@ -127,7 +133,7 @@ html {
 .featured {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(4, 1fr); }
+  grid-template-rows: repeat(4, auto); }
   .featured-title {
     grid-column: 1 / span 2;
     text-align: center; }

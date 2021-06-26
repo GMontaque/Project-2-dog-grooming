@@ -1,7 +1,7 @@
 .pageTop {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: repeat(3, 1fr);
+	grid-template-rows: repeat(3, auto);
 
 	&-img1 {
 		grid-row: 1;
@@ -39,7 +39,7 @@
 .featured {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: repeat(4, 1fr);
+	grid-template-rows: repeat(4, auto);
 
 	&-title {
 		grid-column: 1 / span 2;
