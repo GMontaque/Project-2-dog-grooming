@@ -105,6 +105,98 @@ html {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
 
+/*! top section reviews */
+.reviewsTop-all {
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
+  grid-template-rows: repeat(2, auto);
+  column-gap: 2rem; }
+
+.reviewTop-1 {
+  position: relative;
+  height: 5rem;
+  width: 33vw; }
+  .reviewTop-1_text {
+    position: absolute;
+    right: 0;
+    width: 90%; }
+  .reviewTop-1_customer {
+    position: absolute;
+    right: 0;
+    bottom: 0; }
+
+.fav-icon {
+  position: absolute;
+  left: 0;
+  font-size: 3rem; }
+
+.reviewSlide-bottom {
+  width: 26vw;
+  height: 10rem; }
+  .reviewSlide-bottom_img {
+    background-color: blue;
+    float: left; }
+  .reviewSlide-bottom_text {
+    position: absolute;
+    right: 0;
+    width: 80%;
+    margin: 1rem 0rem; }
+    .reviewSlide-bottom_text::before {
+      content: "";
+      width: 55px;
+      height: 40px;
+      background: url(/dist/img/quotationStart.png);
+      background-size: 70%;
+      background-repeat: no-repeat;
+      position: absolute;
+      left: -22px;
+      bottom: -10px;
+      z-index: -1; }
+    .reviewSlide-bottom_text::after {
+      content: "";
+      width: 55px;
+      height: 40px;
+      background: url(/dist/img/quotationEnd.png);
+      background-size: 70%;
+      background-repeat: no-repeat;
+      position: absolute;
+      right: 0;
+      bottom: -15px;
+      z-index: -1; }
+  .reviewSlide-bottom_customer {
+    position: absolute;
+    right: 0;
+    bottom: 0; }
+
+/*! Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto; }
+
+/*! Hide the images by default */
+.mySlides {
+  display: none; }
+
+/*! Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s; }
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4; }
+  to {
+    opacity: 1; } }
+
+@keyframes fade {
+  from {
+    opacity: 0.4; }
+  to {
+    opacity: 1; } }
+
 .pageTop {
   display: grid;
   grid-template-columns: 1fr;
