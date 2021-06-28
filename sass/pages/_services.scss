@@ -5,8 +5,70 @@
 .products {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 2rem;
 
 	&-service {
 		color: black;
+		position: relative;
+
+		// &_imgBackground:hover {
+		// 	border: 2rem yellow solid;
+		// }
+
+		&-inner {
+			background: blue;
+			opacity: 0.7;
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			display: grid;
+			grid-template-columns: auto;
+			grid-template-rows: repeat(3, auto);
+		}
+
+		&_title {
+			text-align: center;
+		}
+
+		&_button {
+			width: 30%;
+			justify-self: end;
+			margin-top: 1rem;
+		}
+	}
+
+	&-imgBackground {
+		background-image: url(/dist/img/dogGroom1.jpg);
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		height: 20rem;
+	}
+
+	&-imgBackground1 {
+		background-image: url(/dist/img/dogGroom1.jpg);
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		height: 20rem;
+	}
+
+	&-imgBackground2 {
+		background-image: url(/dist/img/dogGroom5.jpg);
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		height: 20rem;
+	}
+
+	&-imgBackground3 {
+		background-image: url(/dist/img/dogShower.jpg);
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		height: 20rem;
+	}
+
+	&-imgBackground4 {
+		background-image: url(/dist/img/dogGroom3.jpg);
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		height: 20rem;
 	}
 }
