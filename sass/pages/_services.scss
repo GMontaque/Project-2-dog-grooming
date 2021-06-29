@@ -24,6 +24,7 @@
 			display: grid;
 			grid-template-columns: auto;
 			grid-template-rows: repeat(3, auto);
+			height: 10rem;
 		}
 
 		&_title {
