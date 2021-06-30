@@ -9,6 +9,7 @@
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 	gap: 2rem;
+	margin-bottom: 5rem;
 }
 
 .forSale {
@@ -24,6 +25,39 @@
 		&_price {
 			margin-bottom: 0.5rem;
 		}
+
+		&-cover {
+			display: flex;
+			flex-direction: row;
+			margin: 0.5rem 0rem;
+		}
+
+		&-Colour {
+			background-color: red;
+			border: 2px solid black;
+			border-radius: 5rem;
+			height: 2rem;
+			width: 2rem;
+			margin-right: 0.5rem;
+
+			&_2 {
+				background-color: blue;
+				border: 2px solid black;
+				border-radius: 5rem;
+				height: 2rem;
+				width: 2rem;
+				margin-right: 0.5rem;
+			}
+
+			&_3 {
+				background-color: grey;
+				border: 2px solid black;
+				border-radius: 5rem;
+				height: 2rem;
+				width: 2rem;
+			}
+		}
+
 		&_button {
 			position: absolute;
 			right: 0;
