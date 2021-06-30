@@ -58,6 +58,15 @@
 		justify-content: space-around;
 		font-size: 4rem;
 		margin-bottom: 3rem;
+
+		a {
+			color: black;
+		}
+
+		.fa:hover,
+		.fab:hover {
+			color: lightgreen;
+		}
 	}
 
 	&-phone {

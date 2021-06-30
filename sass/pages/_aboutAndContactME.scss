@@ -11,6 +11,7 @@
 
 	&-text {
 		margin: auto 0rem;
+		font-size: 1vw;
 
 		&_title {
 			text-align: center;
@@ -22,13 +23,12 @@
 		}
 	}
 }
-
 .contact {
 	display: grid;
-	grid-template-columns: repeat(2, min-content);
+	grid-template-columns: repeat(2, auto);
 	justify-content: center;
 	&-L {
-		width: 22vw;
+		width: 30vw;
 		font-size: 2rem;
 
 		&_title {
@@ -37,19 +37,28 @@
 			font-size: 5rem;
 		}
 
+		&_canvas {
+			width: 90%;
+			margin: 0rem auto;
+			height: 25rem;
+			margin-bottom: 2rem;
+		}
+
 		&_address {
 			display: flex;
 			flex-direction: row;
+			margin-bottom: 2rem;
 			&_text {
-				margin-left: 0.5rem;
+				margin-left: 1.5rem;
 			}
 		}
 
 		&_email {
 			display: flex;
 			flex-direction: row;
+			margin-bottom: 2rem;
 			&_text {
-				margin-left: 0.5rem;
+				margin-left: 2rem;
 			}
 		}
 
@@ -58,13 +67,13 @@
 			flex-direction: row;
 			margin-bottom: 2rem;
 			&_text {
-				margin-left: 0.5rem;
+				margin-left: 2rem;
 			}
 		}
 	}
 
 	&-R {
-		width: 22vw;
+		width: 30vw;
 
 		&_title {
 			text-align: center;
@@ -75,19 +84,26 @@
 		&_form label {
 			font-size: 2rem;
 		}
+		&_form input {
+			margin-bottom: 1rem;
+			padding: 1rem;
+		}
+
+		&_form textarea {
+			padding: 1rem;
+		}
 
 		&_form {
 			display: flex;
 			flex-direction: column;
 			position: relative;
-			height: 22rem;
 
 			&_btn {
-				margin-top: 5rem;
-				width: 50%;
+				width: 40%;
 				position: absolute;
 				right: 0;
-				bottom: 0;
+				bottom: -7rem;
+				padding: 1rem;
 			}
 		}
 	}

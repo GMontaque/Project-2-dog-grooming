@@ -45,9 +45,15 @@
 
 			<!-- social links -->
 			<div class="nav-socialLinks">
-				<i class="fa fa-facebook-square" aria-hidden="true"></i>
-				<i class="fa fa-twitter-square" aria-hidden="true"></i>
-				<i class="fab fa-instagram-square"></i>
+				<a href="http://" target="_blank" rel="noopener noreferrer"
+					><i class="fa fa-facebook-square" aria-hidden="true"></i
+				></a>
+				<a href="http://" target="_blank" rel="noopener noreferrer"
+					><i class="fa fa-twitter-square" aria-hidden="true"></i
+				></a>
+				<a href="http://" target="_blank" rel="noopener noreferrer"
+					><i class="fab fa-instagram-square"></i
+				></a>
 			</div>
 			<!-- contact number and email -->
 			<div class="nav-phone">
@@ -72,9 +78,36 @@
 				<div class="personal-text">
 					<h3 class="personal-text_title">Who am I?</h3>
 					<p class="personal-text_summary">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime
-						facilis modi temporibus magnam nisi! Ratione iste earum debitis
-						cupiditate sit!
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et
+						mollitia maxime cum veniam totam, nam soluta commodi aliquid
+						praesentium sunt nisi! Quis repellat veritatis cumque eaque
+						voluptatum, officiis cupiditate iusto? Hic, iure. Voluptates, quidem
+						alias voluptatem minima laboriosam numquam ut fuga iure blanditiis
+						saepe magnam obcaecati quisquam praesentium culpa sint dolores
+						similique distinctio quas at deserunt nobis atque laudantium,
+						nostrum veritatis! Illo unde tempore voluptatem iusto ut ad libero
+						atque deserunt voluptatum velit explicabo ex recusandae dolorem
+						porro eaque minus voluptatibus, obcaecati suscipit iste eum quisquam
+						labore error quis? Repellendus nobis perferendis quis ad veritatis
+						excepturi eos praesentium a hic.
+
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et
+						mollitia maxime cum veniam totam, nam soluta commodi aliquid
+						praesentium sunt nisi! Quis repellat veritatis cumque eaque
+						voluptatum, officiis cupiditate iusto? Hic, iure. Voluptates, quidem
+						alias voluptatem minima laboriosam numquam ut fuga iure blanditiis
+						saepe magnam obcaecati quisquam praesentium culpa sint dolores
+						similique distinctio quas at deserunt nobis atque laudantium,
+						nostrum veritatis! Illo unde tempore voluptatem iusto ut ad libero
+						atque deserunt voluptatum velit explicabo ex recusandae dolorem
+						porro eaque minus voluptatibus, obcaecati suscipit iste eum quisquam
+						labore error quis? Repellendus nobis perferendis quis ad veritatis
+						excepturi eos praesentium a hic.
 					</p>
 				</div>
 			</div>
@@ -84,21 +117,17 @@
 					<h3 class="contact-L_title">Get in Touch</h3>
 					<!-- <img src="" alt="" class="contact-L_location" /> -->
 					<!-- google maps generator - https://google-map-generator.com/ -->
-					<div class="mapouter" style="margin-bottom: 2rem">
-						<div class="gmap_canvas">
-							<iframe
-								width="300"
-								height="200"
-								id="gmap_canvas"
-								src="https://maps.google.com/maps?q=kings%20cross&t=&z=11&ie=UTF8&iwloc=&output=embed"
-								frameborder="0"
-								scrolling="no"
-								marginheight="0"
-								marginwidth="0"
-							></iframe>
-							<!-- SameSite="None" -->
-						</div>
-					</div>
+
+					<iframe
+						class="contact-L_canvas"
+						src="https://maps.google.com/maps?q=kings%20cross&t=&z=11&ie=UTF8&iwloc=&output=embed"
+						frameborder="0"
+						scrolling="no"
+						marginheight="0"
+						marginwidth="0"
+					></iframe>
+					<!-- SameSite="None" -->
+
 					<div class="contact-L_address">
 						<i class="fa fa-home" aria-hidden="true"></i>
 						<p class="contact-L_address_text">
@@ -119,7 +148,13 @@
 
 				<div class="contact-R">
 					<h3 class="contact-R_title">Mail Us</h3>
-					<form class="contact-R_form">
+					<form
+						class="contact-R_form"
+						action="https://getform.io/f/a422edc1-183a-45b8-9836-2bf2ae667202"
+						method="POST"
+						id="emailForm"
+						onkeyup="manage(this)"
+					>
 						<label for="emailAddress">Email Address</label>
 						<input
 							id="emailAddress"
@@ -145,7 +180,14 @@
 							placeholder="Write your message"
 						></textarea>
 
-						<button class="contact-R_form_btn" type="submit">
+						<button
+							class="contact-R_form_btn"
+							type="submit"
+							value="Send"
+							onclick="resetForms()"
+							id="submit"
+							disabled
+						>
 							Submit Request
 						</button>
 					</form>
@@ -159,5 +201,6 @@
 		></script>
 
 		<script src="/dist/javascript.js"></script>
+		<script src="/dist/emailValid.js"></script>
 	</body>
 </html>
