@@ -75,7 +75,7 @@
 	display: grid;
 	grid-template-columns: min-content min-content;
 	grid-template-rows: repeat(4, auto);
-	margin: 0rem auto;
+	margin: 0rem auto 5rem auto;
 
 	&-title {
 		grid-column: 1 / span 2;
