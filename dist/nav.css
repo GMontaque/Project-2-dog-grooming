@@ -94,7 +94,7 @@ label:before {
 }
 
 #hamburger:checked ~ .content {
-	padding-left: 35vw;
+	padding-left: 50vw;
 	transition: all 0.2s;
 	transition-delay: 0s;
 }
