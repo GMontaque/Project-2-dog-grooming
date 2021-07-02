@@ -52,6 +52,8 @@
 	animation: checkboxUncheckedAnimation 0.35s both;
 }
 
+/*  added to change section
+
 .menu__body-element,
 .menu__body-link {
 	display: none;
@@ -62,11 +64,7 @@
 	text-transform: none;
 	list-style: none;
 	outline: 0;
-}
-
-.menu__body-element {
-	text-indent: 2em;
-}
+} */
 
 .menu__body-link:hover {
 	display: block;
@@ -113,7 +111,7 @@
   *
   *  @note checkboxCheckedAnimation - added fix for Microsoft Edge
   */
-/* @-webkit-keyframes checkboxCheckedAnimation {
+@-webkit-keyframes checkboxCheckedAnimation {
 	50% {
 		width: 100vw;
 		height: 100vh;
@@ -123,10 +121,11 @@
 		height: 100vh;
 		border-radius: 0;
 	}
-} */
-@keyframes checkboxCheckedAnimation {
+}
+/* added to change section
+ @keyframes checkboxCheckedAnimation {
 	50% {
-		width: 100vw;
+		width: 90vw;
 		height: 100vh;
 	}
 	100% {
@@ -134,20 +133,22 @@
 		height: 100vh;
 		border-radius: 0;
 	}
-}
-/* @-webkit-keyframes checkboxUncheckedAnimation {
+} */
+@-webkit-keyframes checkboxUncheckedAnimation {
 	0% {
 		width: 100vw;
 		height: 100vh;
 	}
-} */
+}
+
 @keyframes checkboxUncheckedAnimation {
 	0% {
 		width: 40vw;
 		height: 100vh;
 	}
 }
-/* @-webkit-keyframes changeWidthOfElementAnimation {
+
+@-webkit-keyframes changeWidthOfElementAnimation {
 	50% {
 		width: 0;
 	}
@@ -162,4 +163,172 @@
 	100% {
 		width: 100%;
 	}
+}
+
+/* navbar content style */
+
+/* add to change section
+ .nav-logo {
+	
+	width: 50%;
+	height: 20%;
+	margin: 3rem 3rem 0rem 4rem;
+	position: absolute;
+	top: 49px;
 } */
+.nav-active::before {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	content: "\f1b0";
+	margin-right: 1rem;
+}
+.nav-active::after {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	content: "\f1b0";
+	margin-left: 1rem;
+}
+.nav li:first-of-type {
+	/*! style for first nav link*/
+	border-top: solid 2px black;
+}
+.nav li:last-of-type {
+	/*! style for last nav link */
+	margin-bottom: 3rem;
+}
+/* added to change section
+.nav-item {
+	
+	list-style: none;
+	width: 100%;
+	left: 0;
+	border-bottom: solid 2px black;
+	padding: 1rem 0rem;
+} */
+/* added to change section 
+.nav-item a {
+	text-decoration: none;
+	margin: 0rem 3rem;
+	font-size: 2rem;
+	font-weight: 560;
+} */
+/* added to change section
+.nav-socialLinks {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-around;
+	font-size: 4rem; 
+	 margin-bottom: 3rem; 
+	margin-bottom: 1rem;
+} */
+.nav-socialLinks a {
+	color: black;
+}
+.nav-socialLinks .fa:hover,
+.nav-socialLinks .fab:hover {
+	color: lightgreen;
+}
+/* added to change section
+.nav-phone {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	/font-size: 2rem; - not needed/
+	margin-bottom: 1rem;
+	justify-content: center;
+} */
+.nav-phone_text {
+	margin-left: 0.5rem;
+}
+/* added to change section
+.nav-email {
+	display: flex;
+	flex-direction: row;
+	font-size: 2rem;
+} */
+.nav-email_text {
+	margin-left: 0.5rem;
+}
+
+/* ************************************code changes****************************************** */
+
+.menu__body-element {
+	display: none;
+	margin: 5em 0 -3.3em -0.1em;
+	font-weight: normal;
+	color: #282828;
+	text-decoration: none;
+	text-transform: none;
+	list-style: none;
+	outline: 0;
+}
+
+.nav-logo {
+	width: 50%;
+	height: 20%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.menu__body-element .nav-item:first-of-type {
+	border-top: 2px solid black;
+	margin-top: 1rem;
+}
+
+.nav-item {
+	list-style: none;
+	width: 80%;
+	border-bottom: solid 2px black;
+	padding: 1rem 0rem;
+	margin: 0rem auto;
+}
+
+.nav-item a {
+	text-decoration: none;
+	font-weight: 560;
+	display: flex;
+
+	justify-content: center;
+}
+
+.nav-socialLinks {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-around;
+	font-size: 2rem;
+	margin-top: 1rem;
+	/* margin-bottom: 3rem; 
+	margin-bottom: 1rem; */
+}
+
+.nav-phone {
+	display: flex;
+	flex-direction: row;
+	/* /font-size: 2rem; - not needed/ */
+	margin-top: 1rem;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-email {
+	display: flex;
+	flex-direction: row;
+	/* font-size: 2rem; */
+	align-items: center;
+	justify-content: center;
+}
+
+@keyframes checkboxCheckedAnimation {
+	50% {
+		width: 90vw;
+		height: 100vh;
+	}
+	100% {
+		width: 60vw;
+		height: 100vh;
+		border-radius: 0;
+	}
+}
