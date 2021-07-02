@@ -8,20 +8,15 @@
 		<link rel="stylesheet" href="nav.css" />
 	</head>
 	<body style="position: relative">
-		<div class="fixing" style="position: fixed; top: 0; left: 0">
-			<input
-				type="checkbox"
-				id="hamburger"
-				name="hamburger"
-				onclick="myFunction()"
-			/>
+		<nav style="position: fixed; top: 0; left: 0">
+			<input type="checkbox" id="hamburger" name="hamburger" />
 			<label for="hamburger" id="hamburgers"></label>
-			<div class="menu-container">
-				<div class="menu"></div>
-				<div class="links">
-					<!-- logo image -->
-					<!-- <img src="img/logo.jpg" alt="" class="nav-logo" /> -->
+			<div class="mobile-Nav">
+				<div class="background"></div>
 
+				<!-- logo image -->
+				<img src="img/logo.jpg" alt="" class="nav-logo" />
+				<div class="links">
 					<!-- nav links -->
 					<li class="nav-item">
 						<a class="nav-active" href="/dist/index.html">Home</a>
@@ -67,7 +62,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</nav>
 		<div id="promotion" style="height: 100rem">
 			<h1 class="header">CSS Only Expanding Menu</h1>
 			<p>
@@ -93,8 +88,8 @@
 
 					// If the checkbox is checked, display the output text
 					if (checkBox.checked == true) {
-						text.style.marginTop = "40rem";
-						text.style.marginLeft = "40rem";
+						text.style.marginTop = "5rem";
+						text.style.marginLeft = "20rem";
 					} else {
 						text.style.marginTop = "0rem";
 						text.style.marginLeft = "0rem";
