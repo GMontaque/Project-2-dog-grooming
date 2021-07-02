@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="mobileNavCompleteCSS.css" />
+	</head>
+
+	<!-- positon relative IMPORTANT for nav bar to stay fixed and work -->
+	<body style="position: relative">
+		<!-- visible logo on webpage -->
+		<img src="img/logo.jpg" alt="" id="nav-logo-top" />
+
+		<!-- mobile navbar -->
+		<nav class="nav" id="navBar">
+			<input id="nav-toggle" type="checkbox" onclick="myFunction()" />
+
+			<label class="nav-toggle__trigger" for="nav-toggle"></label>
+
+			<label class="nav-toggle__burger" for="nav-toggle"></label>
+
+			<div class="nav-body">
+				<div class="nav-body_element">
+					<!-- logo image -->
+					<img src="img/logo.jpg" alt="" class="nav-logo" />
+
+					<!-- nav links -->
+					<li class="nav-item">
+						<a class="nav-active" href="/dist/index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="" href="/dist/services.html">Services</a>
+					</li>
+					<li class="nav-item">
+						<a class="" href="/dist/galleryAndReviews.html"
+							>Gallery and Testimonals</a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="" href="/dist/accessoires.html">Accessoires</a>
+					</li>
+					<li class="nav-item">
+						<a class="" href="/dist/aboutAndContactME.html"
+							>Contact Me and About Me</a
+						>
+					</li>
+
+					<!-- social links -->
+					<div class="nav-socialLinks">
+						<a href="http://" target="_blank" rel="noopener noreferrer"
+							><i class="fa fa-facebook-square" aria-hidden="true"></i
+						></a>
+						<a href="http://" target="_blank" rel="noopener noreferrer"
+							><i class="fa fa-twitter-square" aria-hidden="true"></i
+						></a>
+						<a href="http://" target="_blank" rel="noopener noreferrer"
+							><i class="fab fa-instagram-square"></i
+						></a>
+					</div>
+
+					<!-- contact number and email -->
+					<div class="nav-phone">
+						<i class="fa fa-phone-square" aria-hidden="true"></i>
+						<p class="nav-phone_text">01733 774411</p>
+					</div>
+
+					<div class="nav-email">
+						<i class="fa fa-envelope-square" aria-hidden="true"></i>
+						<p class="nav-email_text">example@emailaddress.co.uk</p>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<!-- needed to remove logo image from webpage when navbar is opened -->
+		<script>
+			function myFunction() {
+				// Get the checkbox
+				let checkBox = document.getElementById("nav-toggle");
+
+				// Get the output text
+				var text = document.getElementById("nav-logo-top");
+
+				// If the checkbox is checked, display the output text
+				if (checkBox.checked == true) {
+					text.style.display = "none";
+				} else {
+					text.style.display = "block";
+				}
+			}
+		</script>
+
+		<!-- below all for testing purpose -->
+		<div id="promotion" style="height: 100rem; margin-top: 8rem">
+			<h1 class="header">CSS Only Expanding Menu</h1>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est quisquam
+				sit natus magni qui nemo rerum alias sunt. Nostrum incidunt officiis,
+				vero officia laudantium assumenda voluptatibus magni unde libero
+				reprehenderit.
+			</p>
+
+			<h1>Wowza</h1>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
+				doloremque quidem ipsum officiis in, laboriosam soluta optio dolores
+				nihil est, debitis beatae dolorum atque eos eum? Veniam beatae mollitia
+				distinctio.
+			</p>
+		</div>
+		<!-- script fontawesome -->
+		<script
+			src="https://kit.fontawesome.com/30511564b5.js"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
