@@ -11,44 +11,44 @@
 	<!-- positon relative IMPORTANT for nav bar to stay fixed and work -->
 	<body style="position: relative">
 		<!-- visible logo on webpage -->
-		<img src="img/logo.jpg" alt="" id="nav-logo-top" />
+		<img src="img/logo.jpg" alt="" id="navMobile-logo-top" />
 
 		<!-- mobile navbar -->
-		<nav class="nav" id="navBar">
-			<input id="nav-toggle" type="checkbox" onclick="myFunction()" />
+		<nav class="navMobile" id="navBar">
+			<input id="navMobile-toggle" type="checkbox" onclick="myFunction()" />
 
-			<label class="nav-toggle__trigger" for="nav-toggle"></label>
+			<label class="navMobile-toggle__trigger" for="navMobile-toggle"></label>
 
-			<label class="nav-toggle__burger" for="nav-toggle"></label>
+			<label class="navMobile-toggle__burger" for="navMobile-toggle"></label>
 
-			<div class="nav-body">
-				<div class="nav-body_element">
+			<div class="navMobile-body">
+				<div class="navMobile-body_element">
 					<!-- logo image -->
-					<img src="img/logo.jpg" alt="" class="nav-logo" />
+					<img src="img/logo.jpg" alt="" class="navMobile-logo" />
 
 					<!-- nav links -->
-					<li class="nav-item">
+					<li class="navMobile-item">
 						<a class="nav-active" href="/dist/index.html">Home</a>
 					</li>
-					<li class="nav-item">
+					<li class="navMobile-item">
 						<a class="" href="/dist/services.html">Services</a>
 					</li>
-					<li class="nav-item">
+					<li class="navMobile-item">
 						<a class="" href="/dist/galleryAndReviews.html"
 							>Gallery and Testimonals</a
 						>
 					</li>
-					<li class="nav-item">
+					<li class="navMobile-item">
 						<a class="" href="/dist/accessoires.html">Accessoires</a>
 					</li>
-					<li class="nav-item">
+					<li class="navMobile-item">
 						<a class="" href="/dist/aboutAndContactME.html"
 							>Contact Me and About Me</a
 						>
 					</li>
 
 					<!-- social links -->
-					<div class="nav-socialLinks">
+					<div class="navMobile-socialLinks">
 						<a href="http://" target="_blank" rel="noopener noreferrer"
 							><i class="fa fa-facebook-square" aria-hidden="true"></i
 						></a>
@@ -61,14 +61,14 @@
 					</div>
 
 					<!-- contact number and email -->
-					<div class="nav-phone">
+					<div class="navMobile-phone">
 						<i class="fa fa-phone-square" aria-hidden="true"></i>
-						<p class="nav-phone_text">01733 774411</p>
+						<p class="navMobile-phone_text">01733 774411</p>
 					</div>
 
-					<div class="nav-email">
+					<div class="navMobile-email">
 						<i class="fa fa-envelope-square" aria-hidden="true"></i>
-						<p class="nav-email_text">example@emailaddress.co.uk</p>
+						<p class="navMobile-email_text">example@emailaddress.co.uk</p>
 					</div>
 				</div>
 			</div>
@@ -78,10 +78,10 @@
 		<script>
 			function myFunction() {
 				// Get the checkbox
-				let checkBox = document.getElementById("nav-toggle");
+				let checkBox = document.getElementById("navMobile-toggle");
 
 				// Get the output text
-				var text = document.getElementById("nav-logo-top");
+				var text = document.getElementById("navMobile-logo-top");
 
 				// If the checkbox is checked, display the output text
 				if (checkBox.checked == true) {

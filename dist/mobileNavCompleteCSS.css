@@ -1,26 +1,26 @@
 /*************************** Mobile Nav Styles  **************************/
-#nav-logo-top {
+#navMobile-logo-top {
 	position: fixed;
 	top: 0;
 	right: 0;
 	width: 26vw;
 	height: 15vh;
 }
-nav {
+.navMobile {
 	position: fixed;
 	top: 0;
 	left: 0;
 }
 
-#nav-toggle[type="checkbox"]:not(:checked),
-#nav-toggle[type="checkbox"]:checked {
+#navMobile-toggle[type="checkbox"]:not(:checked),
+#navMobile-toggle[type="checkbox"]:checked {
 	display: none;
 }
 
-.nav-toggle__trigger,
-.nav-toggle__burger,
-.nav-toggle__burger:before,
-.nav-toggle__burger:after {
+.navMobile-toggle__trigger,
+.navMobile-toggle__burger,
+.navMobile-toggle__burger:before,
+.navMobile-toggle__burger:after {
 	position: absolute;
 	top: 1.6em;
 	left: 1.6em;
@@ -33,48 +33,60 @@ nav {
 	transition: 0.35s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
-.nav-toggle__trigger {
+.navMobile-toggle__trigger {
 	height: 2em;
 	background: none;
 }
 
-.nav-toggle__burger:before {
+.navMobile-toggle__burger:before {
 	content: "";
 	top: 10px;
 	left: 0;
 }
-.nav-toggle__burger:after {
+.navMobile-toggle__burger:after {
 	content: "";
 	top: 20px;
 	left: 0;
 }
 
-#nav-toggle:checked + .nav-toggle__trigger + .nav-toggle__burger {
+#navMobile-toggle:checked
+	+ .navMobile-toggle__trigger
+	+ .navMobile-toggle__burger {
 	top: 35px;
 	transform: rotate(405deg);
 	transition: transform 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-#nav-toggle:checked + .nav-toggle__trigger + .nav-toggle__burger:before {
+#navMobile-toggle:checked
+	+ .navMobile-toggle__trigger
+	+ .navMobile-toggle__burger:before {
 	top: 0;
 	transform: rotate(-90deg);
 	transition: transform 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-#nav-toggle:checked + .nav-toggle__trigger + .nav-toggle__burger:after {
+#navMobile-toggle:checked
+	+ .navMobile-toggle__trigger
+	+ .navMobile-toggle__burger:after {
 	top: 0;
 	transform: rotate(90deg);
 	transition: transform 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-#nav-toggle:checked + .nav-toggle__trigger + .nav-toggle__burger + .nav-body {
+#navMobile-toggle:checked
+	+ .navMobile-toggle__trigger
+	+ .navMobile-toggle__burger
+	+ .navMobile-body {
 	-webkit-animation: checkboxCheckedAnimation 1s
 		cubic-bezier(0.25, 0.1, 0.25, 1) both;
 	animation: checkboxCheckedAnimation 1s cubic-bezier(0.25, 0.1, 0.25, 1) both;
 }
-#nav-toggle:checked + .nav-toggle__trigger ~ .nav-body .nav-body_element,
-#nav-toggle:checked + .nav-toggle__trigger ~ .nav-body {
+#navMobile-toggle:checked
+	+ .navMobile-toggle__trigger
+	~ .navMobile-body
+	.navMobile-body_element,
+#navMobile-toggle:checked + .navMobile-toggle__trigger ~ .navMobile-body {
 	display: block;
 }
 
-.nav-body {
+.navMobile-body {
 	position: absolute;
 	width: 7em;
 	height: 7em;
@@ -88,7 +100,7 @@ nav {
 	animation: checkboxUncheckedAnimation 0.35s both;
 }
 
-.nav-body_element {
+.navMobile-body_element {
 	display: none;
 	margin: 5em 0 -3.3em -0.1em;
 	font-weight: normal;
@@ -99,7 +111,7 @@ nav {
 	outline: 0;
 }
 
-.nav-logo {
+.navMobile-logo {
 	width: 50%;
 	height: 20%;
 	display: block;
@@ -107,25 +119,25 @@ nav {
 	margin-right: auto;
 }
 
-.nav-active::before {
+.navMobile-active::before {
 	font-family: "Font Awesome 5 Free";
 	font-weight: 900;
 	content: "\f1b0";
 	margin-right: 1rem;
 }
-.nav-active::after {
+.navMobile-active::after {
 	font-family: "Font Awesome 5 Free";
 	font-weight: 900;
 	content: "\f1b0";
 	margin-left: 1rem;
 }
 
-.nav-body_element .nav-item:first-of-type {
+.navMobile-body_element .navMobile-item:first-of-type {
 	border-top: 2px solid black;
 	margin-top: 1rem;
 }
 
-.nav-item {
+.navMobile-item {
 	list-style: none;
 	width: 80%;
 	border-bottom: solid 2px black;
@@ -133,7 +145,7 @@ nav {
 	margin: 0rem auto;
 }
 
-.nav-item a {
+.navMobile-item a {
 	text-decoration: none;
 	font-weight: 560;
 	display: flex;
@@ -141,7 +153,7 @@ nav {
 	justify-content: center;
 }
 
-.nav-socialLinks {
+.navMobile-socialLinks {
 	display: flex;
 	flex-direction: row;
 	width: 100%;
@@ -152,11 +164,11 @@ nav {
 	margin-bottom: 1rem; */
 }
 
-.nav-socialLinks a {
+.navMobile-socialLinks a {
 	color: black;
 }
 
-.nav-phone {
+.navMobile-phone {
 	display: flex;
 	flex-direction: row;
 	/* /font-size: 2rem; - not needed/ */
@@ -164,10 +176,10 @@ nav {
 	justify-content: center;
 	align-items: center;
 }
-.nav-phone_text {
+.navMobile-phone_text {
 	margin-left: 0.5rem;
 }
-.nav-email {
+.navMobile-email {
 	display: flex;
 	flex-direction: row;
 	/* font-size: 2rem; */
@@ -175,7 +187,7 @@ nav {
 	justify-content: center;
 }
 
-.nav-email_text {
+.navMobile-email_text {
 	margin-left: 0.5rem;
 }
 

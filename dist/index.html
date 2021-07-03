@@ -16,7 +16,7 @@
 		/> -->
 		<link rel="stylesheet" href="style.css" />
 	</head>
-	<body>
+	<body style="position: relative">
 		<!-- navbar -->
 		<!-- modile nav overlay https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp -->
 		<!-- active class code - https://www.w3schools.com/howto/howto_js_active_element.asp -->
@@ -69,6 +69,96 @@
 				<p class="nav-email_text">example@emailaddress.co.uk</p>
 			</div>
 		</nav>
+
+		<div class="mobileHeader">
+			<!-- visible logo on webpage -->
+			<img src="img/logo.jpg" alt="" id="navMobile-logo-top" />
+
+			<!-- nav bar name is in logo image
+				<h1 class="siteName" id="webName">The Royal Groomers</h1> -->
+
+			<!-- mobile navbar -->
+			<nav class="navMobile" id="navBar">
+				<input id="navMobile-toggle" type="checkbox" onclick="myFunction()" />
+
+				<label class="navMobile-toggle__trigger" for="navMobile-toggle"></label>
+
+				<label class="navMobile-toggle__burger" for="navMobile-toggle"></label>
+
+				<div class="navMobile-body">
+					<div class="navMobile-body_element">
+						<!-- logo image -->
+						<img src="img/logo.jpg" alt="" class="navMobile-logo" />
+
+						<!-- nav links -->
+						<li class="navMobile-item">
+							<a class="nav-active" href="/dist/index.html">Home</a>
+						</li>
+						<li class="navMobile-item">
+							<a class="" href="/dist/services.html">Services</a>
+						</li>
+						<li class="navMobile-item">
+							<a class="" href="/dist/galleryAndReviews.html"
+								>Gallery and Testimonals</a
+							>
+						</li>
+						<li class="navMobile-item">
+							<a class="" href="/dist/accessoires.html">Accessoires</a>
+						</li>
+						<li class="navMobile-item">
+							<a class="" href="/dist/aboutAndContactME.html"
+								>Contact Me and About Me</a
+							>
+						</li>
+
+						<!-- social links -->
+						<div class="navMobile-socialLinks">
+							<a href="http://" target="_blank" rel="noopener noreferrer"
+								><i class="fa fa-facebook-square" aria-hidden="true"></i
+							></a>
+							<a href="http://" target="_blank" rel="noopener noreferrer"
+								><i class="fa fa-twitter-square" aria-hidden="true"></i
+							></a>
+							<a href="http://" target="_blank" rel="noopener noreferrer"
+								><i class="fab fa-instagram-square"></i
+							></a>
+						</div>
+
+						<!-- contact number and email -->
+						<div class="navMobile-phone">
+							<i class="fa fa-phone-square" aria-hidden="true"></i>
+							<p class="navMobile-phone_text">01733 774411</p>
+						</div>
+
+						<div class="navMobile-email">
+							<i class="fa fa-envelope-square" aria-hidden="true"></i>
+							<p class="navMobile-email_text">example@emailaddress.co.uk</p>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+
+		<!-- needed to remove logo image from webpage when navbar is opened -->
+		<script>
+			function myFunction() {
+				// Get the checkbox
+				let checkBox = document.getElementById("navMobile-toggle");
+
+				// Get the output text
+				let logo = document.getElementById("navMobile-logo-top");
+				let siteName = document.getElementById("webName");
+
+				// If the checkbox is checked, display the output text
+				if (checkBox.checked == true) {
+					logo.style.display = "none";
+					siteName.style.display = "none";
+				} else {
+					logo.style.display = "block";
+					siteName.style.display = "block";
+				}
+			}
+		</script>
 
 		<div class="container">
 			<!-- top of page -->

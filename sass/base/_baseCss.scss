@@ -29,6 +29,16 @@ html {
 	grid-template-rows: repeat(5, auto);
 }
 
+// modible media query
+
+@media (max-width: 426px) {
+	.container {
+		margin-top: -5%;
+		margin-left: 2vw;
+		grid-template-columns: 97vw;
+	}
+}
+
 // .gridStart {
 // 	grid-column-start: 2;
 // }
