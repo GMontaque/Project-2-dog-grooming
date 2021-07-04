@@ -41,7 +41,7 @@ html {
     /*! logo image nav bar*/
     width: 50%;
     height: auto;
-    margin: 3rem; }
+    margin: 2rem; }
   .nav-active::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
@@ -344,15 +344,17 @@ html {
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: auto;
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem;
+  column-gap: 3rem; }
   .personal-img {
     width: 30vw; }
   .personal-text {
     margin: auto 0rem;
     font-size: 1vw; }
     .personal-text_title {
+      font-size: 5rem;
       text-align: center;
-      margin-bottom: 1rem; }
+      margin-bottom: 3rem; }
     .personal-text_summary {
       margin: 0rem 1rem; }
 
@@ -417,12 +419,21 @@ html {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
-  justify-items: center; }
+  justify-items: center;
+  margin: 5rem 0rem; }
+  .accessories-title {
+    font-size: 5rem; }
+
+.dogTreatsTitle {
+  text-align: center;
+  font-size: 5rem;
+  margin: 0rem 0rem 7rem 0rem; }
 
 .productsList {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem;
+  column-gap: 2rem;
+  row-gap: 7rem;
   margin-bottom: 5rem; }
 
 .forSale {
@@ -495,10 +506,12 @@ html {
 
 /*! top section reviews */
 .reviewsTop {
-  width: 90%;
-  margin: 6rem auto 3rem auto; }
+  width: 95%;
+  padding: 2rem;
+  margin: 8rem auto 0rem auto;
+  background-color: #f2f2fa; }
   .reviewsTop-title {
-    margin-bottom: 2rem;
+    margin: 1rem 0rem 6rem 0rem;
     font-size: 5rem;
     text-align: center; }
   .reviewsTop-all {
@@ -512,10 +525,36 @@ html {
 .reviewTop-1 {
   position: relative;
   height: 15vh; }
+  .reviewTop-1 .fas {
+    font-size: 6rem;
+    margin: 1rem 0rem; }
   .reviewTop-1_text {
     position: absolute;
     right: 0;
-    width: 90%; }
+    width: 82%;
+    z-index: 100; }
+    .reviewTop-1_text::before {
+      content: "";
+      width: 55px;
+      height: 40px;
+      background: url(/dist/img/quotationStart.png);
+      background-size: 70%;
+      background-repeat: no-repeat;
+      position: absolute;
+      left: -12px;
+      bottom: 49px;
+      z-index: -1; }
+    .reviewTop-1_text::after {
+      content: "";
+      width: 55px;
+      height: 40px;
+      background: url(/dist/img/quotationEnd.png);
+      background-size: 70%;
+      background-repeat: no-repeat;
+      position: absolute;
+      right: 0;
+      bottom: -11px;
+      z-index: -1; }
   .reviewTop-1_customer {
     position: absolute;
     right: 0;
@@ -526,6 +565,11 @@ html {
   left: 0;
   font-size: 3rem; }
 
+.reviewsBottom-title {
+  margin: 5rem 0rem 6rem 0rem;
+  font-size: 5rem;
+  text-align: center; }
+
 .reviewSlide {
   font-size: 2rem;
   margin: 3rem auto;
@@ -533,7 +577,6 @@ html {
   .reviewSlide-bottom {
     width: 50vw; }
     .reviewSlide-bottom_img {
-      background-color: blue;
       float: left; }
     .reviewSlide-bottom_text {
       position: absolute;
@@ -617,12 +660,15 @@ html {
       position: absolute;
       top: 40%;
       left: 50%;
-      transform: translate(-50%, -50%); }
+      transform: translate(-50%, -50%);
+      font-size: 5rem;
+      width: 100%;
+      margin-bottom: 9rem; }
     .pageTop-img1_services {
       width: 20%;
       margin: 0rem auto;
       position: absolute;
-      top: 55%;
+      top: 65%;
       left: 50%;
       transform: translate(-50%, -50%); }
   .pageTop-summaryText {
@@ -662,25 +708,39 @@ html {
   margin: 0rem auto 5rem auto; }
   .featured-title {
     grid-column: 1 / span 2;
-    text-align: center; }
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 2rem; }
   .featured-main {
     grid-row: 2 / span 3;
-    background: yellow;
+    background-color: #f2f2fa;
     text-align: center;
-    font-size: 2rem; }
+    font-size: 2rem;
+    border: 2px solid black;
+    border-right: 0; }
+    .featured-main_title {
+      margin: 1rem 0rem;
+      font-size: 3rem; }
     .featured-main_img {
       object-fit: cover;
       width: 30vw;
       height: 60vh; }
     .featured-main_button {
       width: 50%;
-      margin: 0rem auto; }
+      margin: 2rem 0rem; }
   .featured-link {
-    background: red; }
+    background-color: #f2f2fa;
+    border: 2px solid black; }
     .featured-link_img {
       object-fit: cover;
       width: 30vw;
       height: 20vh; }
+    .featured-link_title {
+      font-size: 2rem;
+      margin-bottom: 0.5rem; }
+    .featured-link_text {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem; }
     .featured-link a {
       float: right; }
       .featured-link a .featured-main_button {
@@ -690,53 +750,76 @@ html {
         padding: 6px; }
 
 .servicesTitle {
-  text-align: center; }
+  text-align: center;
+  margin: 4rem 0rem 6rem 0rem;
+  font-size: 5rem; }
 
 .products {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem; }
+  column-gap: 2rem;
+  row-gap: 5rem;
+  margin-bottom: 20rem; }
   .products-service {
     color: black;
-    position: relative; }
+    position: relative;
+    color: white; }
     .products-service-inner {
-      background: blue;
-      opacity: 0.7;
+      background: grey;
+      opacity: 0.9;
       position: absolute;
       bottom: 0;
-      width: 100%;
+      width: 30rem;
       display: grid;
       grid-template-columns: auto;
       grid-template-rows: repeat(3, auto);
-      height: 10rem; }
+      height: 14rem; }
     .products-service_title {
-      text-align: center; }
+      text-align: center;
+      font-size: 1.5rem; }
+    .products-service_text {
+      font-size: 1.5rem; }
     .products-service_button {
       width: 30%;
       justify-self: end;
-      margin-top: 1rem; }
+      margin-top: 1rem;
+      color: white;
+      background-color: black;
+      padding: 0.5rem;
+      position: absolute;
+      bottom: 0; }
   .products-imgBackground {
     background-image: url(/dist/img/dogGroom1.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    height: 20rem; }
+    height: 30rem;
+    width: 30rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; }
   .products-imgBackground1 {
     background-image: url(/dist/img/dogGroom1.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    height: 20rem; }
+    height: 30rem;
+    width: 30rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; }
   .products-imgBackground2 {
     background-image: url(/dist/img/dogGroom5.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    height: 20rem; }
+    height: 30rem;
+    width: 30rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; }
   .products-imgBackground3 {
     background-image: url(/dist/img/dogShower.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    height: 20rem; }
+    height: 30rem;
+    width: 30rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; }
   .products-imgBackground4 {
     background-image: url(/dist/img/dogGroom3.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    height: 20rem; }
+    height: 30rem;
+    width: 30rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; }

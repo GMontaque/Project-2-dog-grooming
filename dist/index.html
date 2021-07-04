@@ -16,11 +16,12 @@
 		/> -->
 		<link rel="stylesheet" href="style.css" />
 	</head>
-	<body style="position: relative">
+	<body>
 		<!-- navbar -->
 		<!-- modile nav overlay https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp -->
 		<!-- active class code - https://www.w3schools.com/howto/howto_js_active_element.asp -->
 		<!-- how to make grid fluid - https://css-tricks.com/snippets/css/complete-guide-grid/ -->
+		<!-- navbar large screen -->
 		<nav class="nav" id="navBar">
 			<!-- logo image -->
 			<img src="img/logo.jpg" alt="" class="nav-logo" />
@@ -139,27 +140,7 @@
 			</nav>
 		</div>
 
-		<!-- needed to remove logo image from webpage when navbar is opened -->
-		<script>
-			function myFunction() {
-				// Get the checkbox
-				let checkBox = document.getElementById("navMobile-toggle");
-
-				// Get the output text
-				let logo = document.getElementById("navMobile-logo-top");
-				let siteName = document.getElementById("webName");
-
-				// If the checkbox is checked, display the output text
-				if (checkBox.checked == true) {
-					logo.style.display = "none";
-					siteName.style.display = "none";
-				} else {
-					logo.style.display = "block";
-					siteName.style.display = "block";
-				}
-			}
-		</script>
-
+		<!-- main webpage -->
 		<div class="container">
 			<!-- top of page -->
 			<div class="pageTop">
@@ -194,7 +175,7 @@
 						class="featured-main_img"
 					/>
 					<h3 class="featured-main_title">
-						Main Article - Improve your Relationship with your Dog
+						Improve your Relationship with your Dog
 					</h3>
 					<p class="featured-main_text">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,

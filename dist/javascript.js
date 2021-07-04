@@ -24,3 +24,23 @@ window.onload = function () {
 		}
 	}
 };
+
+// nav bar mobile JS
+
+function myFunction() {
+	// Get the checkbox
+	let checkBox = document.getElementById("navMobile-toggle");
+
+	// Get the output text
+	let logo = document.getElementById("navMobile-logo-top");
+	// let siteName = document.getElementById("webName");
+
+	// If the checkbox is checked, display the output text
+	if (checkBox.checked == true) {
+		logo.style.display = "none";
+		// siteName.style.display = "none";
+	} else {
+		logo.style.display = "block";
+		// siteName.style.display = "block";
+	}
+}

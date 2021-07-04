@@ -40,11 +40,13 @@
 /*! top section reviews */
 
 .reviewsTop {
-	width: 90%;
-	margin: 6rem auto 3rem auto;
+	width: 95%;
+	padding: 2rem;
+	margin: 8rem auto 0rem auto;
+	background-color: rgb(242, 242, 250);
 
 	&-title {
-		margin-bottom: 2rem;
+		margin: 1rem 0rem 6rem 0rem;
 		font-size: 5rem;
 		text-align: center;
 	}
@@ -62,12 +64,44 @@
 .reviewTop-1 {
 	position: relative;
 	height: 15vh;
+
 	// width: 33vw;
+
+	& .fas {
+		font-size: 6rem;
+		margin: 1rem 0rem;
+	}
 
 	&_text {
 		position: absolute;
 		right: 0;
-		width: 90%;
+		width: 82%;
+		z-index: 100;
+		&::before {
+			content: "";
+			width: 55px;
+			height: 40px;
+			background: url(/dist/img/quotationStart.png);
+			background-size: 70%;
+			background-repeat: no-repeat;
+			position: absolute;
+			left: -12px;
+			bottom: 49px;
+			z-index: -1;
+		}
+
+		&::after {
+			content: "";
+			width: 55px;
+			height: 40px;
+			background: url(/dist/img/quotationEnd.png);
+			background-size: 70%;
+			background-repeat: no-repeat;
+			position: absolute;
+			right: 0;
+			bottom: -11px;
+			z-index: -1;
+		}
 	}
 
 	&_customer {
@@ -83,6 +117,12 @@
 	font-size: 3rem;
 }
 
+.reviewsBottom-title {
+	margin: 5rem 0rem 6rem 0rem;
+	font-size: 5rem;
+	text-align: center;
+}
+
 .reviewSlide {
 	font-size: 2rem;
 	margin: 3rem auto;
@@ -92,7 +132,6 @@
 		width: 50vw;
 
 		&_img {
-			background-color: blue;
 			float: left;
 		}
 
