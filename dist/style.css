@@ -28,7 +28,7 @@ h3 {
 
 @media (max-width: 426px) {
   .container {
-    margin-top: -5%;
+    margin-top: 55%;
     margin-left: 2vw;
     grid-template-columns: 97vw; } }
 
@@ -69,12 +69,11 @@ h3 {
     /*! nav links*/
     list-style: none;
     width: 100%;
-    left: 0;
     border-bottom: solid 2px black;
     padding: 1.5rem 0rem; }
     .nav-item a {
       text-decoration: none;
-      margin: 0rem 1rem;
+      margin: 0rem 0rem 0rem 3rem;
       font-size: 1.5vw;
       font-weight: 560; }
   .nav-socialLinks {
@@ -83,7 +82,7 @@ h3 {
     width: 100%;
     justify-content: space-around;
     font-size: 4rem;
-    margin-bottom: 2rem; }
+    margin-bottom: 1rem; }
     .nav-socialLinks a {
       color: black; }
     .nav-socialLinks .fa:hover,
@@ -95,26 +94,42 @@ h3 {
     justify-content: space-around;
     font-size: 1.5vw;
     margin-bottom: 1rem; }
+    .nav-phone .fa {
+      margin: auto; }
     .nav-phone_text {
-      margin-left: 0.5rem; }
+      margin-left: 0.5rem;
+      margin-bottom: 0.4rem; }
   .nav-email {
     display: flex;
     flex-direction: row;
     font-size: 1.5vw; }
+    .nav-email .fa {
+      margin: auto; }
     .nav-email_text {
-      margin-left: 0.5rem; }
+      margin-left: 0.5rem;
+      margin-bottom: 0.4rem; }
+
+@media (max-width: 769px) {
+  .nav-item a {
+    font-size: 2vw;
+    margin: 0rem 0rem 0rem 1rem; }
+  .nav-socialLinks {
+    font-size: 3rem; } }
 
 /*************************** Mobile Nav Styles  **************************/
 @media (max-width: 426px) {
   .nav {
-    display: none; } }
+    display: none; }
+  .mobileHeader {
+    background-color: white;
+    height: 18vh;
+    position: fixed;
+    width: 100%;
+    z-index: 1; } }
 
 @media (min-width: 426px) {
   .mobileHeader {
     display: none; } }
-
-.mobileHeader {
-  height: 22vh; }
 
 .siteName {
   text-align: center;
@@ -128,9 +143,9 @@ h3 {
   position: fixed;
   top: 0;
   right: 0;
-  width: 26vw;
-  height: 15vh;
-  z-index: 1; }
+  width: 30vw;
+  height: 18vh;
+  z-index: 3; }
 
 .navMobile {
   position: fixed;
@@ -155,10 +170,10 @@ h3 {
 
 .navMobile-toggle__burger {
   position: absolute;
-  top: 1.6em;
-  left: 1.6em;
-  width: 2em;
-  height: 5px;
+  top: 5em;
+  left: 4.6em;
+  width: 5em;
+  height: 7px;
   background-color: #282828;
   border-radius: 2px;
   cursor: pointer;
@@ -166,10 +181,10 @@ h3 {
   transition: 0.35s cubic-bezier(0.25, 0.1, 0.25, 1); }
   .navMobile-toggle__burger:before, .navMobile-toggle__burger:after {
     position: absolute;
-    top: 1.6em;
-    left: 1.6em;
-    width: 2em;
-    height: 5px;
+    top: 5em;
+    left: 4.6em;
+    width: 5em;
+    height: 7px;
     background-color: #282828;
     border-radius: 2px;
     cursor: pointer;
@@ -192,6 +207,7 @@ h3 {
 
 #navMobile-toggle:checked + .navMobile-toggle__trigger + .navMobile-toggle__burger {
   top: 35px;
+  left: 9px;
   transform: rotate(405deg);
   transition: transform 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
   #navMobile-toggle:checked + .navMobile-toggle__trigger + .navMobile-toggle__burger:before {
@@ -217,9 +233,7 @@ h3 {
   height: 7em;
   margin: 0;
   padding: 0;
-  background-color: #fcfcfc;
   border-bottom-right-radius: 100%;
-  box-shadow: 3px 3px 7px rgba(40, 40, 40, 0.2);
   z-index: 10;
   -webkit-animation: checkboxUncheckedAnimation 0.35s both;
   animation: checkboxUncheckedAnimation 0.35s both; }
@@ -285,7 +299,7 @@ h3 {
   display: flex;
   flex-direction: row;
   /* /font-size: 2rem; - not needed/ */
-  margin-top: 1rem;
+  margin: 1rem 0rem;
   justify-content: center;
   align-items: center; }
 
@@ -516,7 +530,8 @@ h3 {
   width: 100%;
   padding: 2rem;
   margin: 8rem auto 0rem auto;
-  background-color: #f2f2fa; }
+  background-color: #f2f2fa;
+  z-index: -1; }
   .reviewsTop-title {
     margin: 1rem 0rem 6rem 0rem;
     font-size: 5rem;

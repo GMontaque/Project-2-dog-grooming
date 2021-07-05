@@ -34,13 +34,17 @@ function myFunction() {
 	// Get the output text
 	let logo = document.getElementById("navMobile-logo-top");
 	// let siteName = document.getElementById("webName");
-
+	let mobNavBody = document.getElementById("mobNavBody");
 	// If the checkbox is checked, display the output text
 	if (checkBox.checked == true) {
 		logo.style.display = "none";
+		mobNavBody.style.backgroundColor = "#fcfcfc";
+		mobNavBody.style.boxShadow = "3px 3px 7px rgba(40, 40, 40, 0.2)";
 		// siteName.style.display = "none";
 	} else {
 		logo.style.display = "block";
+		mobNavBody.style.backgroundColor = "white";
+		mobNavBody.style.boxShadow = "";
 		// siteName.style.display = "block";
 	}
 }

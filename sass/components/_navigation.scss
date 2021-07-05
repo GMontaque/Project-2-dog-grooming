@@ -45,13 +45,12 @@
 		/*! nav links*/
 		list-style: none;
 		width: 100%;
-		left: 0;
 		border-bottom: solid 2px black;
 		padding: 1.5rem 0rem;
 
 		& a {
 			text-decoration: none;
-			margin: 0rem 1rem;
+			margin: 0rem 0rem 0rem 3rem;
 			font-size: 1.5vw;
 			font-weight: 560;
 		}
@@ -63,7 +62,7 @@
 		width: 100%;
 		justify-content: space-around;
 		font-size: 4rem;
-		margin-bottom: 2rem;
+		margin-bottom: 1rem;
 
 		a {
 			color: black;
@@ -82,8 +81,13 @@
 		font-size: 1.5vw;
 		margin-bottom: 1rem;
 
+		& .fa {
+			margin: auto;
+		}
+
 		&_text {
 			margin-left: 0.5rem;
+			margin-bottom: 0.4rem;
 		}
 	}
 
@@ -92,9 +96,25 @@
 		flex-direction: row;
 		font-size: 1.5vw;
 
+		& .fa {
+			margin: auto;
+		}
+
 		&_text {
 			margin-left: 0.5rem;
+			margin-bottom: 0.4rem;
 		}
+	}
+}
+
+@media (max-width: 769px) {
+	.nav-item a {
+		font-size: 2vw;
+		margin: 0rem 0rem 0rem 1rem;
+	}
+
+	.nav-socialLinks {
+		font-size: 3rem;
 	}
 }
 
@@ -105,15 +125,20 @@
 	.nav {
 		display: none;
 	}
+
+	.mobileHeader {
+		background-color: white;
+		height: 18vh;
+		position: fixed;
+		width: 100%;
+		z-index: 1;
+	}
 }
 
 @media (min-width: 426px) {
 	.mobileHeader {
 		display: none;
 	}
-}
-.mobileHeader {
-	height: 22vh;
 }
 
 .siteName {
@@ -129,9 +154,9 @@
 	position: fixed;
 	top: 0;
 	right: 0;
-	width: 26vw;
-	height: 15vh;
-	z-index: 1;
+	width: 30vw;
+	height: 18vh;
+	z-index: 3;
 }
 
 .navMobile {
@@ -163,10 +188,10 @@
 
 .navMobile-toggle__burger {
 	position: absolute;
-	top: 1.6em;
-	left: 1.6em;
-	width: 2em;
-	height: 5px;
+	top: 5em;
+	left: 4.6em;
+	width: 5em;
+	height: 7px;
 	background-color: #282828;
 	border-radius: 2px;
 	cursor: pointer;
@@ -176,10 +201,10 @@
 	&:before,
 	&:after {
 		position: absolute;
-		top: 1.6em;
-		left: 1.6em;
-		width: 2em;
-		height: 5px;
+		top: 5em;
+		left: 4.6em;
+		width: 5em;
+		height: 7px;
 		background-color: #282828;
 		border-radius: 2px;
 		cursor: pointer;
@@ -210,6 +235,7 @@
 #navMobile-toggle:checked + .navMobile-toggle__trigger {
 	+ .navMobile-toggle__burger {
 		top: 35px;
+		left: 9px;
 		transform: rotate(405deg);
 		transition: transform 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
@@ -248,9 +274,9 @@
 	height: 7em;
 	margin: 0;
 	padding: 0;
-	background-color: #fcfcfc;
+	// background-color: #fcfcfc;
 	border-bottom-right-radius: 100%;
-	box-shadow: 3px 3px 7px rgba(40, 40, 40, 0.2);
+	// box-shadow: 3px 3px 7px rgba(40, 40, 40, 0.2);
 	z-index: 10;
 	-webkit-animation: checkboxUncheckedAnimation 0.35s both;
 	animation: checkboxUncheckedAnimation 0.35s both;
@@ -332,7 +358,8 @@
 	flex-direction: row;
 
 	/* /font-size: 2rem; - not needed/ */
-	margin-top: 1rem;
+	margin: 1rem 0rem;
+
 	justify-content: center;
 	align-items: center;
 }
