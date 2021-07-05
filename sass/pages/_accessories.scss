@@ -3,10 +3,16 @@
 	grid-template-columns: 1fr;
 	grid-template-rows: auto auto;
 	justify-items: center;
-	margin: 5rem 0rem;
+	margin: 4rem 0rem;
 
 	&-title {
 		font-size: 5rem;
+		margin-bottom: 3rem;
+	}
+
+	&-summaryText {
+		text-decoration: none;
+		font-size: 2rem;
 	}
 }
 
@@ -19,7 +25,7 @@
 .productsList {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-	column-gap: 2rem;
+	column-gap: 4rem;
 	row-gap: 7rem;
 	margin-bottom: 5rem;
 }
@@ -32,10 +38,15 @@
 
 	&-info {
 		position: relative;
-		height: 15rem;
+		height: 16rem;
 		&_title,
 		&_price {
 			margin-bottom: 0.5rem;
+			font-size: 2rem;
+		}
+
+		&_color {
+			font-size: 1rem;
 		}
 
 		&-cover {
