@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
 * {
   margin: 0;
   padding: 0; }
@@ -10,7 +11,13 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-  /*! 1rem = 10px, 10px/16px = 62.5%*/ }
+  /*! 1rem = 10px, 10px/16px = 62.5%*/
+  font-family: "Berkshire Swash", cursive; }
+
+h1,
+h2,
+h3 {
+  text-decoration: underline; }
 
 .container {
   display: grid;
@@ -57,7 +64,7 @@ html {
     border-top: solid 2px black; }
   .nav li:last-of-type {
     /*! style for last nav link */
-    margin-bottom: 3rem; }
+    margin-bottom: 2rem; }
   .nav-item {
     /*! nav links*/
     list-style: none;
@@ -67,8 +74,8 @@ html {
     padding: 1.5rem 0rem; }
     .nav-item a {
       text-decoration: none;
-      margin: 0rem 3rem;
-      font-size: 2rem;
+      margin: 0rem 1rem;
+      font-size: 1.5vw;
       font-weight: 560; }
   .nav-socialLinks {
     display: flex;
@@ -76,7 +83,7 @@ html {
     width: 100%;
     justify-content: space-around;
     font-size: 4rem;
-    margin-bottom: 3rem; }
+    margin-bottom: 2rem; }
     .nav-socialLinks a {
       color: black; }
     .nav-socialLinks .fa:hover,
@@ -86,14 +93,14 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    font-size: 2rem;
+    font-size: 1.5vw;
     margin-bottom: 1rem; }
     .nav-phone_text {
       margin-left: 0.5rem; }
   .nav-email {
     display: flex;
     flex-direction: row;
-    font-size: 2rem; }
+    font-size: 1.5vw; }
     .nav-email_text {
       margin-left: 0.5rem; }
 
@@ -506,7 +513,7 @@ html {
 
 /*! top section reviews */
 .reviewsTop {
-  width: 95%;
+  width: 100%;
   padding: 2rem;
   margin: 8rem auto 0rem auto;
   background-color: #f2f2fa; }
