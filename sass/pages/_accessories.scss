@@ -104,4 +104,15 @@
 	.dogTreatsTitle {
 		margin: -1rem 0rem 6rem 0rem;
 	}
+
+	.forSale {
+		&-img {
+			margin-left: -2rem;
+			width: 131%;
+			height: 100%;
+		}
+		&-info {
+			margin-right: 2rem;
+		}
+	}
 }

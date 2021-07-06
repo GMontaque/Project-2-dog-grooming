@@ -532,7 +532,13 @@ h3 {
     text-align: center;
     margin: 4rem 1rem; }
   .dogTreatsTitle {
-    margin: -1rem 0rem 6rem 0rem; } }
+    margin: -1rem 0rem 6rem 0rem; }
+  .forSale-img {
+    margin-left: -2rem;
+    width: 131%;
+    height: 100%; }
+  .forSale-info {
+    margin-right: 2rem; } }
 
 .row {
   display: flex;
@@ -686,22 +692,6 @@ h3 {
   to {
     opacity: 1; } }
 
-@media (max-width: 426px) {
-  .reviewsTop-title {
-    font-size: 11vw; }
-  .reviewsTop-all {
-    grid-template-columns: auto;
-    grid-template-rows: repeat(4, auto);
-    font-size: 1.5rem; }
-  .reviewsTop-1 {
-    height: 18vh; }
-  .reviewSlide {
-    font-size: 1.5rem;
-    margin: 3rem 1rem;
-    height: 18vh; }
-    .reviewSlide-bottom_text {
-      width: 70%; } }
-
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .column {
@@ -713,6 +703,24 @@ h3 {
   .column {
     flex: 100%;
     max-width: 100%; } }
+
+@media (max-width: 426px) {
+  .reviewsTop {
+    margin: 0rem auto 0rem auto; }
+    .reviewsTop-title {
+      font-size: 11vw; }
+    .reviewsTop-all {
+      grid-template-columns: auto;
+      grid-template-rows: repeat(4, auto);
+      font-size: 1.5rem; }
+    .reviewsTop-1 {
+      height: 18vh; }
+  .reviewSlide {
+    font-size: 1.5rem;
+    margin: 3rem 1rem;
+    height: 18vh; }
+    .reviewSlide-bottom_text {
+      width: 70%; } }
 
 .pageTop {
   display: grid;
@@ -756,7 +764,8 @@ h3 {
     margin: 1rem auto;
     justify-content: center;
     text-align: center;
-    font-size: 2rem; }
+    font-size: 2rem;
+    text-decoration: none; }
   .pageTop-img2 {
     grid-row: 3;
     display: flex;
@@ -825,6 +834,35 @@ h3 {
         margin: 0rem auto;
         padding: 6px; }
 
+@media (max-width: 426px) {
+  .pageTop-img1 {
+    width: 94%;
+    margin: 0rem 1rem; }
+    .pageTop-img1_title {
+      font-size: 11vw; }
+  .pageTop-summaryText {
+    width: 94%;
+    font-size: 4vw;
+    text-decoration: none;
+    margin-bottom: 3rem; }
+  .pageTop-img2 {
+    width: 88%;
+    height: 33vh;
+    margin: 0rem 2rem 4rem 2rem; }
+  .featured-title {
+    font-size: 11vw; }
+  .featured-main {
+    grid-column: 1 / span 2;
+    border: 2px solid black;
+    width: 83vw; }
+    .featured-main_img {
+      width: 82vw; }
+  .featured-link {
+    grid-column: 2 / 3;
+    width: 83vw; }
+    .featured-link_img {
+      width: 82vw; } }
+
 .servicesTitle {
   text-align: center;
   margin: 4rem 0rem 6rem 0rem;
@@ -868,34 +906,49 @@ h3 {
     background-image: url(/dist/img/dogGroom1.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    height: 30rem;
+    height: 34rem;
     width: 30rem;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; }
   .products-imgBackground1 {
     background-image: url(/dist/img/dogGroom1.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    height: 30rem;
+    height: 34rem;
     width: 30rem;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; }
   .products-imgBackground2 {
     background-image: url(/dist/img/dogGroom5.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    height: 30rem;
+    height: 34rem;
     width: 30rem;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; }
   .products-imgBackground3 {
     background-image: url(/dist/img/dogShower.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    height: 30rem;
+    height: 34rem;
     width: 30rem;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; }
   .products-imgBackground4 {
     background-image: url(/dist/img/dogGroom3.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    height: 30rem;
+    height: 34rem;
     width: 30rem;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; }
+
+@media (max-width: 426px) {
+  .servicesTitle {
+    margin: 1rem 0rem 7rem 0rem;
+    font-size: 11vw; }
+  .products {
+    margin: 0rem auto; }
+    .products-service {
+      width: 80vw;
+      margin: 0rem auto; }
+      .products-service-inner {
+        width: 80vw;
+        height: 18rem; }
+    .products:last-of-type {
+      margin-bottom: 10rem; } }

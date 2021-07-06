@@ -56,7 +56,7 @@
 		background-image: url(/dist/img/dogGroom1.jpg);
 		background-size: 100% 100%;
 		background-repeat: no-repeat;
-		height: 30rem;
+		height: 34rem;
 		width: 30rem;
 		box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
 			rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
@@ -67,7 +67,7 @@
 		background-image: url(/dist/img/dogGroom1.jpg);
 		background-size: 100% 100%;
 		background-repeat: no-repeat;
-		height: 30rem;
+		height: 34rem;
 		width: 30rem;
 		box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
 			rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
@@ -78,7 +78,7 @@
 		background-image: url(/dist/img/dogGroom5.jpg);
 		background-size: 100% 100%;
 		background-repeat: no-repeat;
-		height: 30rem;
+		height: 34rem;
 		width: 30rem;
 		box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
 			rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
@@ -89,7 +89,7 @@
 		background-image: url(/dist/img/dogShower.jpg);
 		background-size: 100% 100%;
 		background-repeat: no-repeat;
-		height: 30rem;
+		height: 34rem;
 		width: 30rem;
 		box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
 			rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
@@ -100,10 +100,37 @@
 		background-image: url(/dist/img/dogGroom3.jpg);
 		background-size: 100% 100%;
 		background-repeat: no-repeat;
-		height: 30rem;
+		height: 34rem;
 		width: 30rem;
 		box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
 			rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
 			rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+	}
+}
+
+// mobile style
+
+@media (max-width: 426px) {
+	.servicesTitle {
+		margin: 1rem 0rem 7rem 0rem;
+		font-size: 11vw;
+	}
+
+	.products {
+		margin: 0rem auto;
+
+		&-service {
+			width: 80vw;
+			margin: 0rem auto;
+
+			&-inner {
+				width: 80vw;
+				height: 18rem;
+			}
+		}
+
+		&:last-of-type {
+			margin-bottom: 10rem;
+		}
 	}
 }
