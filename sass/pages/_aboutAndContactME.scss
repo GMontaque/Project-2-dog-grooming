@@ -110,3 +110,43 @@
 		}
 	}
 }
+
+// mobile style
+
+@media (max-width: 426px) {
+	.personal {
+		grid-template-columns: auto;
+		grid-template-rows: auto;
+
+		&-img {
+			margin: 3rem auto;
+			width: 60vw;
+		}
+
+		&-text {
+			grid-row: 1;
+			font-size: 4vw;
+		}
+	}
+
+	.contact {
+		grid-template-columns: auto;
+
+		&-L,
+		&-R {
+			width: 88vw;
+		}
+
+		&-L {
+			&_canvas {
+				width: 100%;
+			}
+		}
+
+		&-R {
+			margin-top: 3rem;
+			margin-bottom: 5rem;
+			height: 44rem;
+		}
+	}
+}

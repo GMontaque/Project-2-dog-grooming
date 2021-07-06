@@ -88,3 +88,20 @@
 		}
 	}
 }
+
+// mobile style
+
+@media (max-width: 426px) {
+	.productsList {
+		margin: 0rem 2rem 6rem 2rem;
+	}
+
+	.accessories {
+		text-align: center;
+		margin: 4rem 1rem;
+	}
+
+	.dogTreatsTitle {
+		margin: -1rem 0rem 6rem 0rem;
+	}
+}

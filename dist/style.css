@@ -28,7 +28,7 @@ h3 {
 
 @media (max-width: 426px) {
   .container {
-    margin-top: 55%;
+    margin-top: 40%;
     margin-left: 2vw;
     grid-template-columns: 97vw; } }
 
@@ -125,7 +125,8 @@ h3 {
     height: 18vh;
     position: fixed;
     width: 100%;
-    z-index: 1; } }
+    z-index: 1;
+    border: 2px solid black; } }
 
 @media (min-width: 426px) {
   .mobileHeader {
@@ -436,6 +437,27 @@ h3 {
         bottom: -7rem;
         padding: 1rem; }
 
+@media (max-width: 426px) {
+  .personal {
+    grid-template-columns: auto;
+    grid-template-rows: auto; }
+    .personal-img {
+      margin: 3rem auto;
+      width: 60vw; }
+    .personal-text {
+      grid-row: 1;
+      font-size: 4vw; }
+  .contact {
+    grid-template-columns: auto; }
+    .contact-L, .contact-R {
+      width: 88vw; }
+    .contact-L_canvas {
+      width: 100%; }
+    .contact-R {
+      margin-top: 3rem;
+      margin-bottom: 5rem;
+      height: 44rem; } }
+
 .accessories {
   display: grid;
   grid-template-columns: 1fr;
@@ -503,6 +525,15 @@ h3 {
       right: 0;
       bottom: 0; }
 
+@media (max-width: 426px) {
+  .productsList {
+    margin: 0rem 2rem 6rem 2rem; }
+  .accessories {
+    text-align: center;
+    margin: 4rem 1rem; }
+  .dogTreatsTitle {
+    margin: -1rem 0rem 6rem 0rem; } }
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -519,18 +550,6 @@ h3 {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%; }
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 33%; } }
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%; } }
 
 /*! top section reviews */
 .reviewsTop {
@@ -666,6 +685,34 @@ h3 {
     opacity: 0.4; }
   to {
     opacity: 1; } }
+
+@media (max-width: 426px) {
+  .reviewsTop-title {
+    font-size: 11vw; }
+  .reviewsTop-all {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, auto);
+    font-size: 1.5rem; }
+  .reviewsTop-1 {
+    height: 18vh; }
+  .reviewSlide {
+    font-size: 1.5rem;
+    margin: 3rem 1rem;
+    height: 18vh; }
+    .reviewSlide-bottom_text {
+      width: 70%; } }
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 33%; } }
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%; } }
 
 .pageTop {
   display: grid;
