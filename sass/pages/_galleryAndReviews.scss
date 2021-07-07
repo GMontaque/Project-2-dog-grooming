@@ -117,6 +117,8 @@
 
 		&_img {
 			float: left;
+			font-size: 8rem;
+			margin: 1rem 0rem;
 		}
 
 		&_text {
@@ -215,6 +217,10 @@
 
 // mobile style
 @media (max-width: 426px) {
+	.row {
+		margin-bottom: 7rem;
+	}
+
 	.reviewsTop {
 		margin: 0rem auto 0rem auto;
 
@@ -227,9 +233,15 @@
 			grid-template-rows: repeat(4, auto);
 			font-size: 1.5rem;
 		}
+	}
 
+	.reviewTop {
 		&-1 {
 			height: 18vh;
+
+			&_text {
+				width: 68vw;
+			}
 		}
 	}
 
@@ -242,6 +254,37 @@
 			&_text {
 				width: 70%;
 			}
+		}
+	}
+
+	.reviewsBottom {
+		&-title {
+			font-size: 11vw;
+
+			&_img {
+				float: left;
+				font-size: 7rem;
+				margin: 2rem 0rem;
+			}
+		}
+	}
+}
+
+@media (max-width: 321px) {
+	.reviewTop {
+		&-1 {
+			height: 21vh;
+			&_text {
+				width: 60vw;
+			}
+		}
+	}
+	.reviewSlide {
+		height: 24vh;
+	}
+	.reviewSlide-bottom {
+		&_img {
+			font-size: 6rem;
 		}
 	}
 }

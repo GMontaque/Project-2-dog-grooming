@@ -22,8 +22,8 @@ h3 {
 .container {
   display: grid;
   position: absolute;
-  margin-left: 28vw;
-  grid-template-columns: 68vw;
+  margin-left: 26vw;
+  grid-template-columns: 71vw;
   grid-template-rows: repeat(5, auto); }
 
 @media (max-width: 426px) {
@@ -631,7 +631,9 @@ h3 {
   .reviewSlide-bottom {
     width: 50vw; }
     .reviewSlide-bottom_img {
-      float: left; }
+      float: left;
+      font-size: 8rem;
+      margin: 1rem 0rem; }
     .reviewSlide-bottom_text {
       position: absolute;
       right: 0;
@@ -705,6 +707,8 @@ h3 {
     max-width: 100%; } }
 
 @media (max-width: 426px) {
+  .row {
+    margin-bottom: 7rem; }
   .reviewsTop {
     margin: 0rem auto 0rem auto; }
     .reviewsTop-title {
@@ -713,14 +717,32 @@ h3 {
       grid-template-columns: auto;
       grid-template-rows: repeat(4, auto);
       font-size: 1.5rem; }
-    .reviewsTop-1 {
-      height: 18vh; }
+  .reviewTop-1 {
+    height: 18vh; }
+    .reviewTop-1_text {
+      width: 68vw; }
   .reviewSlide {
     font-size: 1.5rem;
     margin: 3rem 1rem;
     height: 18vh; }
     .reviewSlide-bottom_text {
-      width: 70%; } }
+      width: 70%; }
+  .reviewsBottom-title {
+    font-size: 11vw; }
+    .reviewsBottom-title_img {
+      float: left;
+      font-size: 7rem;
+      margin: 2rem 0rem; } }
+
+@media (max-width: 321px) {
+  .reviewTop-1 {
+    height: 21vh; }
+    .reviewTop-1_text {
+      width: 60vw; }
+  .reviewSlide {
+    height: 24vh; }
+  .reviewSlide-bottom_img {
+    font-size: 6rem; } }
 
 .pageTop {
   display: grid;
@@ -834,6 +856,12 @@ h3 {
         margin: 0rem auto;
         padding: 6px; }
 
+@media (max-width: 1024px) {
+  .featured {
+    margin: 0rem 2rem 5rem 2rem; }
+    .featured-main_img {
+      width: 35vw; } }
+
 @media (max-width: 426px) {
   .pageTop-img1 {
     width: 94%;
@@ -849,19 +877,29 @@ h3 {
     width: 88%;
     height: 33vh;
     margin: 0rem 2rem 4rem 2rem; }
-  .featured-title {
-    font-size: 11vw; }
-  .featured-main {
-    grid-column: 1 / span 2;
-    border: 2px solid black;
-    width: 83vw; }
-    .featured-main_img {
-      width: 82vw; }
-  .featured-link {
-    grid-column: 2 / 3;
-    width: 83vw; }
-    .featured-link_img {
-      width: 82vw; } }
+  .featured {
+    margin: 0rem auto 5rem auto; }
+    .featured-title {
+      font-size: 11vw; }
+    .featured-main {
+      grid-column: 1 / span 2;
+      border: 2px solid black;
+      width: 83vw; }
+      .featured-main_img {
+        width: 82vw; }
+    .featured-link {
+      grid-column: 2 / 3;
+      width: 83vw; }
+      .featured-link_img {
+        width: 82vw; } }
+
+@media (max-width: 376px) {
+  .pageTop-summaryText {
+    margin-top: -1rem; } }
+
+@media (max-width: 321px) {
+  .pageTop-summaryText {
+    margin-top: -2rem; } }
 
 .servicesTitle {
   text-align: center;

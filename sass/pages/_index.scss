@@ -163,6 +163,18 @@
 	}
 }
 
+// screen size 1024px
+@media (max-width: 1024px) {
+	.featured {
+		margin: 0rem 2rem 5rem 2rem;
+		&-main {
+			&_img {
+				width: 35vw;
+			}
+		}
+	}
+}
+
 // mobile style
 
 @media (max-width: 426px) {
@@ -190,6 +202,7 @@
 	}
 
 	.featured {
+		margin: 0rem auto 5rem auto;
 		&-title {
 			font-size: 11vw;
 		}
@@ -209,6 +222,22 @@
 			&_img {
 				width: 82vw;
 			}
+		}
+	}
+}
+
+@media (max-width: 376px) {
+	.pageTop {
+		&-summaryText {
+			margin-top: -1rem;
+		}
+	}
+}
+
+@media (max-width: 321px) {
+	.pageTop {
+		&-summaryText {
+			margin-top: -2rem;
 		}
 	}
 }
