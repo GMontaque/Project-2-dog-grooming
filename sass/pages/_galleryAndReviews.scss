@@ -47,7 +47,8 @@
 
 .reviewTop-1 {
 	position: relative;
-	height: 15vh;
+	height: 22vh;
+	// width: 29vw;
 
 	// width: 33vw;
 
@@ -59,7 +60,7 @@
 	&_text {
 		position: absolute;
 		right: 0;
-		width: 82%;
+		width: 26vw;
 		z-index: 100;
 		&::before {
 			content: "";
@@ -215,6 +216,23 @@
 	}
 }
 
+// @media (max-width: 974px) {
+// 	.reviewTop-1 {
+// 		height: 29vh;
+// 	}
+// }
+
+// // tablet stlye
+// @media (max-width: 769px) {
+// 	.reviewTop {
+// 		&-1 {
+// 			&_text {
+// 				height: 10rem;
+// 			}
+// 		}
+// 	}
+// }
+
 // mobile style
 @media (max-width: 426px) {
 	.row {
@@ -238,9 +256,10 @@
 	.reviewTop {
 		&-1 {
 			height: 18vh;
+			width: 86vw;
 
 			&_text {
-				width: 68vw;
+				width: 65vw;
 			}
 		}
 	}
