@@ -10,12 +10,13 @@
 	column-gap: 2rem;
 	row-gap: 5rem;
 	margin-bottom: 20rem;
+	margin-left: 3rem;
 
 	&-service {
 		color: black;
 		position: relative;
 		color: white;
-		height: 20vw;
+		height: 37vh;
 		width: 20vw;
 		// &_imgBackground:hover {
 		// 	border: 2rem yellow solid;
@@ -30,7 +31,7 @@
 			display: grid;
 			grid-template-columns: auto;
 			grid-template-rows: repeat(3, auto);
-			height: 14rem;
+			height: 17rem;
 		}
 
 		&_title {
@@ -39,11 +40,11 @@
 		}
 
 		&_text {
-			font-size: 1.5rem;
+			font-size: 1vw;
 		}
 
 		&_button {
-			width: 30%;
+			width: 10vw;
 			justify-self: end;
 			margin-top: 1rem;
 			color: white;
@@ -110,6 +111,15 @@
 	}
 }
 
+@media (max-width: 1025px) {
+	.products {
+		&-service {
+			&_text {
+				font-size: 1.3vw;
+			}
+		}
+	}
+}
 // tablet style
 
 @media (max-width: 769px) {
@@ -118,6 +128,18 @@
 		&-service {
 			height: 30vw;
 			width: 30vw;
+
+			&-inner {
+				height: 14rem;
+			}
+
+			&_text {
+				font-size: 1.5vw;
+			}
+
+			&_button {
+				width: 12vw;
+			}
 		}
 	}
 }
@@ -142,6 +164,14 @@
 			&-inner {
 				width: 80vw;
 				height: 18rem;
+			}
+
+			&_text {
+				font-size: 4vw;
+			}
+
+			&_button {
+				width: 33vw;
 			}
 		}
 

@@ -946,12 +946,13 @@ h3 {
   grid-template-columns: repeat(3, auto);
   column-gap: 2rem;
   row-gap: 5rem;
-  margin-bottom: 20rem; }
+  margin-bottom: 20rem;
+  margin-left: 3rem; }
   .products-service {
     color: black;
     position: relative;
     color: white;
-    height: 20vw;
+    height: 37vh;
     width: 20vw; }
     .products-service-inner {
       background: grey;
@@ -961,14 +962,14 @@ h3 {
       display: grid;
       grid-template-columns: auto;
       grid-template-rows: repeat(3, auto);
-      height: 14rem; }
+      height: 17rem; }
     .products-service_title {
       text-align: center;
       font-size: 1.5rem; }
     .products-service_text {
-      font-size: 1.5rem; }
+      font-size: 1vw; }
     .products-service_button {
-      width: 30%;
+      width: 10vw;
       justify-self: end;
       margin-top: 1rem;
       color: white;
@@ -1002,12 +1003,22 @@ h3 {
     background-repeat: no-repeat;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; }
 
+@media (max-width: 1025px) {
+  .products-service_text {
+    font-size: 1.3vw; } }
+
 @media (max-width: 769px) {
   .products {
     grid-template-columns: repeat(2, auto); }
     .products-service {
       height: 30vw;
-      width: 30vw; } }
+      width: 30vw; }
+      .products-service-inner {
+        height: 14rem; }
+      .products-service_text {
+        font-size: 1.5vw; }
+      .products-service_button {
+        width: 12vw; } }
 
 @media (max-width: 426px) {
   .servicesTitle {
@@ -1023,5 +1034,9 @@ h3 {
       .products-service-inner {
         width: 80vw;
         height: 18rem; }
+      .products-service_text {
+        font-size: 4vw; }
+      .products-service_button {
+        width: 33vw; }
     .products:last-of-type {
       margin-bottom: 10rem; } }
