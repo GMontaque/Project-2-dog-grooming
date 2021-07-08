@@ -385,7 +385,7 @@ h3 {
   grid-template-columns: repeat(2, auto);
   justify-content: center; }
   .contact-L {
-    width: 30vw;
+    width: 33vw;
     font-size: 2rem; }
     .contact-L_title {
       margin-bottom: 1rem;
@@ -414,7 +414,7 @@ h3 {
       .contact-L_phone_text {
         margin-left: 2rem; }
   .contact-R {
-    width: 30vw; }
+    width: 33vw; }
     .contact-R_title {
       text-align: center;
       margin-bottom: 1rem;
@@ -436,6 +436,24 @@ h3 {
         right: 0;
         bottom: -7rem;
         padding: 1rem; }
+
+@media (max-width: 769px) {
+  .personal-text_title {
+    font-size: 6vw; }
+  .contact {
+    grid-template-columns: auto; }
+    .contact-L, .contact-R {
+      width: 60vw; }
+    .contact-L_title {
+      font-size: 6vw; }
+    .contact-L_canvas {
+      width: 100%; }
+    .contact-R {
+      margin-top: 3rem;
+      margin-bottom: 5rem;
+      height: 44rem; }
+      .contact-R_title {
+        font-size: 6vw; } }
 
 @media (max-width: 426px) {
   .personal {
@@ -873,7 +891,11 @@ h3 {
     margin: 2rem auto 4rem auto;
     font-size: 3vw; }
   .pageTop-img2 {
-    width: 80%; } }
+    width: 80%; }
+  .featured-main_title {
+    font-size: 4vw; }
+  .featured-link_title {
+    font-size: 3vw; } }
 
 @media (max-width: 426px) {
   .pageTop-img1 {
@@ -921,20 +943,21 @@ h3 {
 
 .products {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, auto);
   column-gap: 2rem;
   row-gap: 5rem;
   margin-bottom: 20rem; }
   .products-service {
     color: black;
     position: relative;
-    color: white; }
+    color: white;
+    height: 20vw;
+    width: 20vw; }
     .products-service-inner {
       background: grey;
       opacity: 0.9;
       position: absolute;
       bottom: 0;
-      width: 30rem;
       display: grid;
       grid-template-columns: auto;
       grid-template-rows: repeat(3, auto);
@@ -957,46 +980,45 @@ h3 {
     background-image: url(/dist/img/dogGroom1.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    height: 34rem;
-    width: 30rem;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; }
   .products-imgBackground1 {
     background-image: url(/dist/img/dogGroom1.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    height: 34rem;
-    width: 30rem;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; }
   .products-imgBackground2 {
     background-image: url(/dist/img/dogGroom5.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    height: 34rem;
-    width: 30rem;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; }
   .products-imgBackground3 {
     background-image: url(/dist/img/dogShower.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    height: 34rem;
-    width: 30rem;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; }
   .products-imgBackground4 {
     background-image: url(/dist/img/dogGroom3.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    height: 34rem;
-    width: 30rem;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; }
+
+@media (max-width: 769px) {
+  .products {
+    grid-template-columns: repeat(2, auto); }
+    .products-service {
+      height: 30vw;
+      width: 30vw; } }
 
 @media (max-width: 426px) {
   .servicesTitle {
     margin: 1rem 0rem 7rem 0rem;
     font-size: 11vw; }
   .products {
-    margin: 0rem auto; }
+    margin: 0rem auto;
+    grid-template-columns: auto; }
     .products-service {
       width: 80vw;
+      height: 50vh;
       margin: 0rem auto; }
       .products-service-inner {
         width: 80vw;

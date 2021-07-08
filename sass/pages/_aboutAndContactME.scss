@@ -30,7 +30,7 @@
 	grid-template-columns: repeat(2, auto);
 	justify-content: center;
 	&-L {
-		width: 30vw;
+		width: 33vw;
 		font-size: 2rem;
 
 		&_title {
@@ -75,7 +75,7 @@
 	}
 
 	&-R {
-		width: 30vw;
+		width: 33vw;
 
 		&_title {
 			text-align: center;
@@ -107,6 +107,59 @@
 				bottom: -7rem;
 				padding: 1rem;
 			}
+		}
+	}
+}
+
+// mobile style
+
+@media (max-width: 769px) {
+	// 	.contact {
+	// 		&-L {
+	// 			width: 34vw;
+	// 			&_title {
+	// 				font-size: 6vw;
+	// 			}
+	// 		}
+
+	// 		&-R {
+	// 			width: 34vw;
+	// 			&_title {
+	// 				font-size: 6vw;
+	// 			}
+	// 		}
+	// 	}
+	// }
+
+	// @media (max-width: 617px) {
+	.personal-text_title {
+		font-size: 6vw;
+	}
+
+	.contact {
+		grid-template-columns: auto;
+
+		&-L,
+		&-R {
+			width: 60vw;
+		}
+
+		&-L {
+			&_title {
+				font-size: 6vw;
+			}
+			&_canvas {
+				width: 100%;
+			}
+		}
+
+		&-R {
+			&_title {
+				font-size: 6vw;
+			}
+			margin-top: 3rem;
+			margin-bottom: 5rem;
+			height: 44rem;
 		}
 	}
 }
