@@ -24,6 +24,17 @@ function emailAddress() {
 }
 emailAddress();
 
+// function checker() {
+// 	let emailFrom = document.getElementById("emailForm");
+// 	if (emailFrom.checkValidity()) {
+// 		return null;
+// 	} else {
+// 		alert(
+// 			"Please note, email address should be entered in the following format: email@tester.com"
+// 		);
+// 	}
+// }
+
 /**********************reset submitted form************************************/
 
 function resetForms() {
@@ -31,7 +42,7 @@ function resetForms() {
 	if (emailFrom.checkValidity()) {
 		setTimeout(function () {
 			document.getElementById("emailAddress").value = "";
-			document.getElementById("subjectBar").value = "";
+			document.getElementById("subject").value = "";
 			document.getElementById("textArea").value = "";
 			document.getElementById("sumbit").disabled = false;
 		}, 1000);
