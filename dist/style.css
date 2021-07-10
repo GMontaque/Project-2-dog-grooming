@@ -38,22 +38,16 @@ h3 {
 
 /* button style */
 .custom-btn {
-  width: 130px;
-  height: 40px;
   color: #fff;
   border-radius: 5px;
-  padding: 10px 25px;
-  font-family: "Lato", sans-serif;
   font-weight: 500;
-  background: transparent;
+  font-family: inherit;
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
-  outline: none;
-  margin: 0rem auto;
-  transform: translate(-50%, -50%); }
+  outline: none; }
 
 .btn {
   background: red;
@@ -68,9 +62,7 @@ h3 {
     left: 0;
     z-index: -1;
     border-radius: 5px;
-    background-color: #eaf818;
     background-image: linear-gradient(315deg, lightblue 0%, blue 74%);
-    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5) 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease; }
   .btn:hover {
     color: #000; }
@@ -459,28 +451,33 @@ h3 {
       .contact-L_phone_text {
         margin-left: 2rem; }
   .contact-R {
-    width: 33vw; }
+    width: 33vw;
+    background-color: lightgrey; }
     .contact-R_title {
       text-align: center;
       margin-bottom: 1rem;
       font-size: 5rem; }
-    .contact-R_form label {
-      font-size: 2rem; }
-    .contact-R_form input {
-      margin-bottom: 1rem;
-      padding: 1rem; }
-    .contact-R_form textarea {
-      padding: 1rem; }
     .contact-R_form {
       display: flex;
       flex-direction: column;
-      position: relative; }
+      position: relative;
+      padding: 0rem 1rem; }
+      .contact-R_form label {
+        font-size: 2rem; }
+      .contact-R_form input {
+        margin-bottom: 1rem;
+        padding: 1rem;
+        border: none; }
+      .contact-R_form textarea {
+        padding: 1rem;
+        border: none; }
       .contact-R_form_btn {
         width: 40%;
         position: absolute;
         right: 0;
         bottom: -7rem;
-        padding: 1rem; }
+        padding: 1rem;
+        margin-right: 1rem; }
 
 @media (max-width: 769px) {
   .personal-text_title {
@@ -586,7 +583,9 @@ h3 {
     .forSale-info_button {
       position: absolute;
       right: 0;
-      bottom: 0; }
+      bottom: 0;
+      height: 4vh;
+      width: 11vw; }
 
 @media (max-width: 426px) {
   .productsList {
@@ -829,8 +828,12 @@ h3 {
       margin-bottom: 9rem; }
     .pageTop-img1_services {
       position: absolute;
-      bottom: 0;
-      left: 50%; }
+      bottom: 20px;
+      left: 49%;
+      transform: translate(-50%, -50%); }
+      .pageTop-img1_services button {
+        width: 130px;
+        height: 40px; }
   .pageTop-summaryText {
     grid-row: 2;
     display: flex;
@@ -888,7 +891,8 @@ h3 {
       height: 60vh; }
     .featured-main_button {
       width: 50%;
-      margin: 2rem 0rem; }
+      margin: 2rem 0rem;
+      height: 4rem; }
   .featured-link {
     background-color: #f2f2fa;
     border: 2px solid black; }
@@ -905,10 +909,9 @@ h3 {
     .featured-link a {
       float: right; }
       .featured-link a .featured-main_button {
-        width: 100%;
-        height: 3rem;
-        margin: 0rem auto;
-        padding: 6px; }
+        width: 10vw;
+        height: 5vh;
+        margin: 3rem 0rem 0rem 0rem; }
 
 @media (max-width: 1024px) {
   .featured {
@@ -1005,10 +1008,10 @@ h3 {
       font-size: 1vw; }
     .products-service_button {
       width: 10vw;
+      height: 4vh;
       justify-self: end;
       margin-top: 1rem;
       color: white;
-      background-color: black;
       padding: 0.5rem;
       position: absolute;
       bottom: 0; }

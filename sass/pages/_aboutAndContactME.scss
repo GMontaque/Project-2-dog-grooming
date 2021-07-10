@@ -76,29 +76,31 @@
 
 	&-R {
 		width: 33vw;
+		background-color: lightgrey;
 
 		&_title {
 			text-align: center;
 			margin-bottom: 1rem;
 			font-size: 5rem;
 		}
-
-		&_form label {
-			font-size: 2rem;
-		}
-		&_form input {
-			margin-bottom: 1rem;
-			padding: 1rem;
-		}
-
-		&_form textarea {
-			padding: 1rem;
-		}
-
 		&_form {
 			display: flex;
 			flex-direction: column;
 			position: relative;
+			padding: 0rem 1rem;
+			& label {
+				font-size: 2rem;
+			}
+			& input {
+				margin-bottom: 1rem;
+				padding: 1rem;
+				border: none;
+			}
+
+			& textarea {
+				padding: 1rem;
+				border: none;
+			}
 
 			&_btn {
 				width: 40%;
@@ -106,6 +108,7 @@
 				right: 0;
 				bottom: -7rem;
 				padding: 1rem;
+				margin-right: 1rem;
 			}
 		}
 	}
