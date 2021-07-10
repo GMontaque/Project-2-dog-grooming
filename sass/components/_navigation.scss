@@ -128,11 +128,15 @@
 
 	.mobileHeader {
 		background-color: white;
-		height: 18vh;
+		height: 19vh;
 		position: fixed;
 		width: 100%;
-		z-index: 1;
-		border: 2px solid black;
+		z-index: 10;
+		border-bottom: 8px solid black;
+	}
+
+	.featured-main_button {
+		width: 26vw !important;
 	}
 }
 
@@ -153,10 +157,10 @@
 
 #navMobile-logo-top {
 	position: fixed;
-	top: 0;
-	right: 0;
-	width: 30vw;
-	height: 18vh;
+	top: 3px;
+	right: 2px;
+	width: 14rem;
+	height: 17vh;
 	z-index: 3;
 }
 

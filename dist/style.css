@@ -159,11 +159,13 @@ h3 {
     display: none; }
   .mobileHeader {
     background-color: white;
-    height: 18vh;
+    height: 19vh;
     position: fixed;
     width: 100%;
-    z-index: 1;
-    border: 2px solid black; } }
+    z-index: 10;
+    border-bottom: 8px solid black; }
+  .featured-main_button {
+    width: 26vw !important; } }
 
 @media (min-width: 426px) {
   .mobileHeader {
@@ -179,10 +181,10 @@ h3 {
 
 #navMobile-logo-top {
   position: fixed;
-  top: 0;
-  right: 0;
-  width: 30vw;
-  height: 18vh;
+  top: 3px;
+  right: 2px;
+  width: 14rem;
+  height: 17vh;
   z-index: 3; }
 
 .navMobile {
@@ -600,7 +602,10 @@ h3 {
     width: 131%;
     height: 100%; }
   .forSale-info {
-    margin-right: 2rem; } }
+    margin-right: 2rem; }
+    .forSale-info_button {
+      height: 5vh;
+      width: 41vw; } }
 
 .row {
   display: flex;
@@ -1005,7 +1010,8 @@ h3 {
       text-align: center;
       font-size: 1.5rem; }
     .products-service_text {
-      font-size: 1vw; }
+      font-size: 1vw;
+      padding: 0rem 1rem; }
     .products-service_button {
       width: 10vw;
       height: 4vh;
@@ -1037,6 +1043,21 @@ h3 {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; }
   .products-imgBackground4 {
     background-image: url(/dist/img/dogGroom3.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; }
+  .products-imgBackground5 {
+    background-image: url(/dist/img/puppyEyes.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; }
+  .products-imgBackground6 {
+    background-image: url(/dist/img/smallDog.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; }
+  .products-imgBackground7 {
+    background-image: url(/dist/img/serviceIMG.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; }
