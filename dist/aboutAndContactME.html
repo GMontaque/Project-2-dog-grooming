@@ -224,10 +224,10 @@
 						onkeyup="manage(this)"
 					>
 						<label for="emailAddress">Email Address</label>
-						<!-- pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" -->
+						<!-- type="email" -->
 						<input
+							pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
 							id="emailAddress"
-							type="email"
 							name="email"
 							placeholder="test@emailadress.com"
 						/>
@@ -248,17 +248,18 @@
 							rows="5"
 							placeholder="Write your message"
 						></textarea>
-
-						<button
-							class="contact-R_form_btn custom-btn btn"
-							type="submit"
-							value="Send"
-							onclick="resetForms()"
-							id="submit"
-							disabled
-						>
-							Submit Request
-						</button>
+						<div class="contact-R_form_btn">
+							<button
+								class="custom-btn btn"
+								type="submit"
+								value="Send"
+								onclick="resetForms()"
+								id="submit"
+								disabled
+							>
+								Submit Request
+							</button>
+						</div>
 					</form>
 				</div>
 			</div>

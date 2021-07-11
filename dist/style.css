@@ -52,7 +52,10 @@ h3 {
 .btn {
   background: red;
   border: none;
-  z-index: 1; }
+  z-index: 1;
+  padding: 1rem;
+  margin-right: 1rem;
+  width: 100%; }
   .btn:after {
     position: absolute;
     content: "";
@@ -474,12 +477,10 @@ h3 {
         padding: 1rem;
         border: none; }
       .contact-R_form_btn {
-        width: 40%;
         position: absolute;
         right: 0;
         bottom: -7rem;
-        padding: 1rem;
-        margin-right: 1rem; }
+        margin-right: 3rem; }
 
 @media (max-width: 769px) {
   .personal-text_title {
