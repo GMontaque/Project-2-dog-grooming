@@ -33,7 +33,7 @@
 			display: grid;
 			grid-template-columns: auto;
 			grid-template-rows: repeat(3, auto);
-			height: 17rem;
+			height: 18rem;
 		}
 
 		&_title {
@@ -50,7 +50,7 @@
 			width: 10vw;
 			height: 4vh;
 			justify-self: end;
-			margin-top: 1rem;
+			// margin-top: 1rem;
 			color: white;
 			// background-color: black;
 			padding: 0.5rem;
@@ -178,7 +178,17 @@
 			}
 
 			&_button {
-				width: 12vw;
+				width: 15vw;
+			}
+		}
+	}
+}
+
+@media (max-width: 525px) {
+	.products {
+		&-service {
+			&_button {
+				width: 20vw;
 			}
 		}
 	}

@@ -7,7 +7,7 @@
 
 	&-img1 {
 		height: 50vh;
-		width: 50vw;
+		width: 55vw;
 		background-size: 100% 120%;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -57,8 +57,8 @@
 			transform: translate(-50%, -50%);
 
 			& button {
-				width: 130px;
-				height: 40px;
+				width: 15vw;
+				height: 6vh;
 			}
 		}
 	}
@@ -78,11 +78,16 @@
 
 	&-img2 {
 		height: 30vh;
-		width: 40vw;
+		width: 45vw;
 		margin: 0rem auto;
 		text-align: center;
-		background-image: url(/dist/img/dogRunning.jpg);
-		background-size: 100% 100%;
+		background-image: linear-gradient(
+				to right bottom,
+				rgba(20, 2, 2, 0.5),
+				rgba(36, 6, 6, 0.5)
+			),
+			url(/dist/img/dogOutside.jpg);
+		background-size: 100% 150%;
 		background-position: center;
 		background-repeat: no-repeat;
 		position: relative;
@@ -90,10 +95,11 @@
 
 		&_arrow {
 			position: absolute;
-			bottom: 5%;
+			bottom: -1%;
 			left: 50%;
 			transform: translate(-50%, -50%);
-			font-size: 3rem;
+			font-size: 5rem;
+			color: white;
 		}
 	}
 }
@@ -177,7 +183,7 @@
 		a {
 			float: right;
 
-			& .featured-main_button {
+			& .featured-second_button {
 				width: 10vw;
 				height: 5vh;
 				margin: 3rem 0rem 0rem 0rem;
@@ -187,12 +193,23 @@
 }
 
 /* screen size 1024px */
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
 	.featured {
 		margin: 0rem 2rem 5rem 2rem;
 		&-main {
 			&_img {
 				width: 35vw;
+			}
+			&_button {
+				width: 12vw;
+			}
+		}
+
+		&-link {
+			a {
+				& .featured-second_button {
+					width: 12vw;
+				}
 			}
 		}
 	}
@@ -207,6 +224,10 @@
 			margin: 4rem 2rem 2rem 2rem;
 			&_title {
 				font-size: 7vw;
+			}
+
+			&_services button {
+				width: 20vw;
 			}
 		}
 
@@ -225,11 +246,37 @@
 			&_title {
 				font-size: 4vw;
 			}
+			&_button {
+				width: 17vw;
+			}
 		}
 
 		&-link {
 			&_title {
 				font-size: 3vw;
+			}
+			a {
+				& .featured-second_button {
+					width: 15vw;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 581px) {
+	.featured {
+		&-main {
+			&_button {
+				width: 20vw;
+			}
+		}
+
+		&-link {
+			a {
+				& .featured-second_button {
+					width: 20vw;
+				}
 			}
 		}
 	}
@@ -244,6 +291,9 @@
 			margin: 0rem 1rem;
 			&_title {
 				font-size: 11vw;
+			}
+			&_services button {
+				width: 30vw;
 			}
 		}
 
@@ -274,6 +324,10 @@
 			&_img {
 				width: 82vw;
 			}
+
+			&_button {
+				width: 40vw;
+			}
 		}
 
 		&-link {
@@ -282,22 +336,25 @@
 			&_img {
 				width: 82vw;
 			}
-		}
-	}
-}
-
-@media (max-width: 376px) {
-	.pageTop {
-		&-summaryText {
-			margin-top: -1rem;
+			a {
+				& .featured-second_button {
+					width: 30vw;
+				}
+			}
 		}
 	}
 }
 
 @media (max-width: 321px) {
 	.pageTop {
-		&-summaryText {
-			margin-top: -2rem;
-		}
+		margin-top: 3rem;
 	}
 }
+
+// @media (max-width: 376px) {
+// 	.pageTop {
+// 		&-summaryText {
+// 			margin-top: -1rem;
+// 		}
+// 	}
+// }

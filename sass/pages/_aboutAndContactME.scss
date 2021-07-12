@@ -106,9 +106,14 @@
 
 			&_btn {
 				position: absolute;
-				right: 0;
+				right: 11px;
 				bottom: -7rem;
-				margin-right: 3rem;
+				// margin-right: 3rem;
+
+				& .submitBtn {
+					padding: 1rem;
+					width: 15rem;
+				}
 			}
 		}
 	}
@@ -176,7 +181,7 @@
 
 		&-img {
 			margin: 3rem auto;
-			width: 60vw;
+			width: 70vw;
 		}
 
 		&-text {
@@ -204,5 +209,11 @@
 			margin-bottom: 5rem;
 			height: 44rem;
 		}
+	}
+}
+
+@media (max-width: 375px) {
+	.contact-L_address_text {
+		font-size: 5vw;
 	}
 }

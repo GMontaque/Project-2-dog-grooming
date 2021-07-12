@@ -7,7 +7,7 @@
 	flex-direction: column;
 	align-items: center;
 	font-size: 2vw;
-	border: red 2px solid;
+	border: black 2px solid;
 	background-color: lightblue;
 
 	// display: grid;
@@ -18,6 +18,7 @@
 		width: 50%;
 		height: auto;
 		margin: 2rem;
+		border-radius: 100px;
 	}
 
 	&-active::before {
@@ -73,7 +74,7 @@
 
 		.fa:hover,
 		.fab:hover {
-			color: lightgreen;
+			color: #1515bb;
 		}
 	}
 
@@ -91,6 +92,7 @@
 		&_text {
 			margin-left: 0.5rem;
 			margin-bottom: 0.4rem;
+			color: #0f0f89;
 		}
 	}
 
@@ -106,6 +108,7 @@
 		&_text {
 			margin-left: 0.5rem;
 			margin-bottom: 0.4rem;
+			color: #0f0f89;
 		}
 	}
 }
@@ -136,10 +139,6 @@
 		width: 100%;
 		z-index: 10;
 		border-bottom: 8px solid black;
-	}
-
-	.featured-main_button {
-		width: 26vw !important;
 	}
 }
 

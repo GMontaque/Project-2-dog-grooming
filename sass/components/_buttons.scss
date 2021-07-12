@@ -26,8 +26,8 @@
 	background: red;
 	border: none;
 	z-index: 1;
-	padding: 1rem;
-	margin-right: 1rem;
+	// padding: 1rem;
+	// margin-right: 1rem;
 	width: 100%;
 	&:after {
 		position: absolute;
@@ -38,7 +38,7 @@
 		left: 0;
 		z-index: -1;
 		border-radius: 5px;
-		background-image: linear-gradient(315deg, lightblue 0%, blue 74%);
+		background-image: linear-gradient(315deg, lightblue 0%, lightblue 74%);
 		transition: all 0.3s ease;
 
 		// background-color: #eaf818;

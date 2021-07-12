@@ -52,8 +52,6 @@ h3 {
   background: red;
   border: none;
   z-index: 1;
-  padding: 1rem;
-  margin-right: 1rem;
   width: 100%; }
   .btn:after {
     position: absolute;
@@ -64,7 +62,7 @@ h3 {
     left: 0;
     z-index: -1;
     border-radius: 5px;
-    background-image: linear-gradient(315deg, lightblue 0%, blue 74%);
+    background-image: linear-gradient(315deg, lightblue 0%, lightblue 74%);
     transition: all 0.3s ease; }
   .btn:hover {
     color: #000; }
@@ -84,13 +82,14 @@ h3 {
   flex-direction: column;
   align-items: center;
   font-size: 2vw;
-  border: red 2px solid;
+  border: black 2px solid;
   background-color: lightblue; }
   .nav-logo {
     /* logo image nav bar*/
     width: 50%;
     height: auto;
-    margin: 2rem; }
+    margin: 2rem;
+    border-radius: 100px; }
   .nav-active::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
@@ -129,7 +128,7 @@ h3 {
       color: black; }
     .nav-socialLinks .fa:hover,
     .nav-socialLinks .fab:hover {
-      color: lightgreen; }
+      color: #1515bb; }
   .nav-phone {
     display: flex;
     flex-direction: row;
@@ -140,7 +139,8 @@ h3 {
       margin: auto; }
     .nav-phone_text {
       margin-left: 0.5rem;
-      margin-bottom: 0.4rem; }
+      margin-bottom: 0.4rem;
+      color: #0f0f89; }
   .nav-email {
     display: flex;
     flex-direction: row;
@@ -149,7 +149,8 @@ h3 {
       margin: auto; }
     .nav-email_text {
       margin-left: 0.5rem;
-      margin-bottom: 0.4rem; }
+      margin-bottom: 0.4rem;
+      color: #0f0f89; }
 
 /*  tablet Nav Styles  */
 @media (max-width: 769px) {
@@ -169,9 +170,7 @@ h3 {
     position: fixed;
     width: 100%;
     z-index: 10;
-    border-bottom: 8px solid black; }
-  .featured-main_button {
-    width: 26vw !important; } }
+    border-bottom: 8px solid black; } }
 
 @media (min-width: 426px) {
   .mobileHeader {
@@ -476,9 +475,11 @@ h3 {
         border: none; }
       .contact-R_form_btn {
         position: absolute;
-        right: 0;
-        bottom: -7rem;
-        margin-right: 3rem; }
+        right: 11px;
+        bottom: -7rem; }
+        .contact-R_form_btn .submitBtn {
+          padding: 1rem;
+          width: 15rem; }
 
 /* tablet style - about and contact page */
 @media (max-width: 769px) {
@@ -506,7 +507,7 @@ h3 {
     grid-template-rows: auto; }
     .personal-img {
       margin: 3rem auto;
-      width: 60vw; }
+      width: 70vw; }
     .personal-text {
       grid-row: 1;
       font-size: 4vw; }
@@ -520,6 +521,10 @@ h3 {
       margin-top: 3rem;
       margin-bottom: 5rem;
       height: 44rem; } }
+
+@media (max-width: 375px) {
+  .contact-L_address_text {
+    font-size: 5vw; } }
 
 /* accessories page*/
 .accessories {
@@ -554,7 +559,7 @@ h3 {
   column-gap: 1rem; }
   .forSale-info {
     position: relative;
-    height: 16rem; }
+    height: 18rem; }
     .forSale-info_title, .forSale-info_price {
       margin-bottom: 0.5rem;
       font-size: 2rem; }
@@ -589,7 +594,7 @@ h3 {
       right: 0;
       bottom: 0;
       height: 4vh;
-      width: 11vw; }
+      width: 15rem; }
 
 /* mobile style */
 @media (max-width: 426px) {
@@ -608,7 +613,7 @@ h3 {
     margin-right: 2rem; }
     .forSale-info_button {
       height: 5vh;
-      width: 41vw; } }
+      width: 45vw; } }
 
 /* gallery adn reviews page */
 .row {
@@ -818,7 +823,7 @@ h3 {
   grid-template-rows: repeat(3, auto); }
   .pageTop-img1 {
     height: 50vh;
-    width: 50vw;
+    width: 55vw;
     background-size: 100% 120%;
     background-position: center;
     background-repeat: no-repeat;
@@ -842,8 +847,8 @@ h3 {
       left: 49%;
       transform: translate(-50%, -50%); }
       .pageTop-img1_services button {
-        width: 130px;
-        height: 40px; }
+        width: 15vw;
+        height: 6vh; }
   .pageTop-summaryText {
     grid-row: 2;
     display: flex;
@@ -857,21 +862,22 @@ h3 {
     text-decoration: none; }
   .pageTop-img2 {
     height: 30vh;
-    width: 40vw;
+    width: 45vw;
     margin: 0rem auto;
     text-align: center;
-    background-image: url(/dist/img/dogRunning.jpg);
-    background-size: 100% 100%;
+    background-image: linear-gradient(to right bottom, rgba(20, 2, 2, 0.5), rgba(36, 6, 6, 0.5)), url(/dist/img/dogOutside.jpg);
+    background-size: 100% 150%;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
     margin-bottom: 5rem; }
     .pageTop-img2_arrow {
       position: absolute;
-      bottom: 5%;
+      bottom: -1%;
       left: 50%;
       transform: translate(-50%, -50%);
-      font-size: 3rem; }
+      font-size: 5rem;
+      color: white; }
 
 .featured {
   display: grid;
@@ -916,17 +922,21 @@ h3 {
       margin-bottom: 0.5rem; }
     .featured-link a {
       float: right; }
-      .featured-link a .featured-main_button {
+      .featured-link a .featured-second_button {
         width: 10vw;
         height: 5vh;
         margin: 3rem 0rem 0rem 0rem; }
 
 /* screen size 1024px */
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
   .featured {
     margin: 0rem 2rem 5rem 2rem; }
     .featured-main_img {
-      width: 35vw; } }
+      width: 35vw; }
+    .featured-main_button {
+      width: 12vw; }
+    .featured-link a .featured-second_button {
+      width: 12vw; } }
 
 /* tablet style */
 @media (max-width: 769px) {
@@ -935,6 +945,8 @@ h3 {
     margin: 4rem 2rem 2rem 2rem; }
     .pageTop-img1_title {
       font-size: 7vw; }
+    .pageTop-img1_services button {
+      width: 20vw; }
   .pageTop-summaryText {
     margin: 2rem auto 4rem auto;
     font-size: 3vw; }
@@ -942,8 +954,18 @@ h3 {
     width: 80%; }
   .featured-main_title {
     font-size: 4vw; }
+  .featured-main_button {
+    width: 17vw; }
   .featured-link_title {
-    font-size: 3vw; } }
+    font-size: 3vw; }
+  .featured-link a .featured-second_button {
+    width: 15vw; } }
+
+@media (max-width: 581px) {
+  .featured-main_button {
+    width: 20vw; }
+  .featured-link a .featured-second_button {
+    width: 20vw; } }
 
 /* mobile style */
 @media (max-width: 426px) {
@@ -952,6 +974,8 @@ h3 {
     margin: 0rem 1rem; }
     .pageTop-img1_title {
       font-size: 11vw; }
+    .pageTop-img1_services button {
+      width: 30vw; }
   .pageTop-summaryText {
     width: 94%;
     font-size: 4vw;
@@ -971,19 +995,19 @@ h3 {
       width: 83vw; }
       .featured-main_img {
         width: 82vw; }
+      .featured-main_button {
+        width: 40vw; }
     .featured-link {
       grid-column: 2 / 3;
       width: 83vw; }
       .featured-link_img {
-        width: 82vw; } }
-
-@media (max-width: 376px) {
-  .pageTop-summaryText {
-    margin-top: -1rem; } }
+        width: 82vw; }
+      .featured-link a .featured-second_button {
+        width: 30vw; } }
 
 @media (max-width: 321px) {
-  .pageTop-summaryText {
-    margin-top: -2rem; } }
+  .pageTop {
+    margin-top: 3rem; } }
 
 /* service page */
 .servicesTitle {
@@ -1012,7 +1036,7 @@ h3 {
       display: grid;
       grid-template-columns: auto;
       grid-template-rows: repeat(3, auto);
-      height: 17rem; }
+      height: 18rem; }
     .products-service_title {
       text-align: center;
       font-size: 1.5rem; }
@@ -1023,7 +1047,6 @@ h3 {
       width: 10vw;
       height: 4vh;
       justify-self: end;
-      margin-top: 1rem;
       color: white;
       padding: 0.5rem;
       position: absolute;
@@ -1086,7 +1109,11 @@ h3 {
       .products-service_text {
         font-size: 1.5vw; }
       .products-service_button {
-        width: 12vw; } }
+        width: 15vw; } }
+
+@media (max-width: 525px) {
+  .products-service_button {
+    width: 20vw; } }
 
 /* mobile style */
 @media (max-width: 426px) {
