@@ -1,4 +1,6 @@
+/* font awesome */
 @import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
+/* website base code */
 * {
   margin: 0;
   padding: 0; }
@@ -26,15 +28,12 @@ h3 {
   grid-template-columns: 71vw;
   grid-template-rows: repeat(5, auto); }
 
+/* mobile media query */
 @media (max-width: 426px) {
   .container {
     margin-top: 40%;
     margin-left: 2vw;
     grid-template-columns: 97vw; } }
-
-.test {
-  color: purple;
-  font-weight: 800; }
 
 /* button style */
 .custom-btn {
@@ -76,6 +75,7 @@ h3 {
   .btn:active {
     top: 2px; }
 
+/* pc navbar style */
 .nav {
   height: 100vh;
   width: 25vw;
@@ -83,9 +83,11 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 2vw; }
+  font-size: 2vw;
+  border: red 2px solid;
+  background-color: lightblue; }
   .nav-logo {
-    /*! logo image nav bar*/
+    /* logo image nav bar*/
     width: 50%;
     height: auto;
     margin: 2rem; }
@@ -100,13 +102,13 @@ h3 {
     content: "\f1b0";
     margin-left: 1rem; }
   .nav li:first-of-type {
-    /*! style for first nav link*/
+    /* style for first nav link*/
     border-top: solid 2px black; }
   .nav li:last-of-type {
-    /*! style for last nav link */
+    /* style for last nav link */
     margin-bottom: 2rem; }
   .nav-item {
-    /*! nav links*/
+    /* nav links*/
     list-style: none;
     width: 100%;
     border-bottom: solid 2px black;
@@ -149,6 +151,7 @@ h3 {
       margin-left: 0.5rem;
       margin-bottom: 0.4rem; }
 
+/*  tablet Nav Styles  */
 @media (max-width: 769px) {
   .nav-item a {
     font-size: 2vw;
@@ -156,7 +159,7 @@ h3 {
   .nav-socialLinks {
     font-size: 3rem; } }
 
-/*************************** Mobile Nav Styles  **************************/
+/*  Mobile Nav Styles  */
 @media (max-width: 426px) {
   .nav {
     display: none; }
@@ -341,7 +344,6 @@ h3 {
 .navMobile-phone {
   display: flex;
   flex-direction: row;
-  /* /font-size: 2rem; - not needed/ */
   margin: 1rem 0rem;
   justify-content: center;
   align-items: center; }
@@ -352,7 +354,6 @@ h3 {
 .navMobile-email {
   display: flex;
   flex-direction: row;
-  /* font-size: 2rem; */
   align-items: center;
   justify-content: center; }
 
@@ -400,10 +401,7 @@ h3 {
   100% {
     width: 100%; } }
 
-.nav {
-  border: red 2px solid;
-  background-color: lightblue; }
-
+/* about and contact page */
 .personal {
   display: grid;
   grid-template-columns: repeat(2, auto);
@@ -482,6 +480,7 @@ h3 {
         bottom: -7rem;
         margin-right: 3rem; }
 
+/* tablet style - about and contact page */
 @media (max-width: 769px) {
   .personal-text_title {
     font-size: 6vw; }
@@ -500,6 +499,7 @@ h3 {
       .contact-R_title {
         font-size: 6vw; } }
 
+/* mobile style - about and contact page */
 @media (max-width: 426px) {
   .personal {
     grid-template-columns: auto;
@@ -521,6 +521,7 @@ h3 {
       margin-bottom: 5rem;
       height: 44rem; } }
 
+/* accessories page*/
 .accessories {
   display: grid;
   grid-template-columns: 1fr;
@@ -590,6 +591,7 @@ h3 {
       height: 4vh;
       width: 11vw; }
 
+/* mobile style */
 @media (max-width: 426px) {
   .productsList {
     margin: 0rem 2rem 6rem 2rem; }
@@ -608,6 +610,7 @@ h3 {
       height: 5vh;
       width: 41vw; } }
 
+/* gallery adn reviews page */
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -617,7 +620,7 @@ h3 {
 .row:last-of-type {
   margin-top: 3rem; }
 
-/* Create four equal columns that sits next to each other */
+/* Creates columns on page */
 .column {
   flex: 33%;
   max-width: 33%;
@@ -628,7 +631,7 @@ h3 {
   vertical-align: middle;
   width: 100%; }
 
-/*! top section reviews */
+/* top section reviews */
 .reviewsTop {
   width: 100%;
   padding: 2rem;
@@ -727,16 +730,16 @@ h3 {
       position: absolute;
       right: 0; }
 
-/*! Slideshow container */
+/* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
   position: relative; }
 
-/*! Hide the images by default */
+/* Hide the images by default */
 .mySlides {
   display: none; }
 
-/*! Fading animation */
+/* Fading animation */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -755,23 +758,25 @@ h3 {
   to {
     opacity: 1; } }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
+/* Responsive layout - makes a two column-layout */
 @media screen and (max-width: 800px) {
   .column {
     flex: 50%;
     max-width: 33%; } }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/* Responsive layout -  two columns */
 @media screen and (max-width: 600px) {
   .column {
     flex: 100%;
     max-width: 100%; } }
 
+/* tablet media query */
 @media (max-width: 769px) {
   .reviewTop-1_customer {
     right: 15px;
     font-size: 3vw; } }
 
+/* mobile style */
 @media (max-width: 426px) {
   .row {
     margin-bottom: 7rem; }
@@ -806,22 +811,20 @@ h3 {
       font-size: 7rem;
       margin: 2rem 0rem; } }
 
+/* homepage */
 .pageTop {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, auto); }
   .pageTop-img1 {
-    grid-row: 1;
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin: 0rem auto;
-    text-align: center;
-    background-image: url(/dist/img/dogRelax.jpg);
-    background-size: 100% auto;
+    height: 50vh;
+    width: 50vw;
+    background-size: 100% 120%;
     background-position: center;
     background-repeat: no-repeat;
-    height: 30rem;
+    background-image: linear-gradient(to right bottom, rgba(20, 2, 2, 0.7), rgba(36, 6, 6, 0.7)), url(/dist/img/dogRelax.jpg);
+    margin: 0rem auto;
+    text-align: center;
     position: relative;
     margin-top: 2rem; }
     .pageTop-img1_title {
@@ -831,7 +834,8 @@ h3 {
       transform: translate(-50%, -50%);
       font-size: 5rem;
       width: 100%;
-      margin-bottom: 9rem; }
+      margin-bottom: 9rem;
+      color: white; }
     .pageTop-img1_services {
       position: absolute;
       bottom: 20px;
@@ -852,16 +856,14 @@ h3 {
     font-size: 2rem;
     text-decoration: none; }
   .pageTop-img2 {
-    grid-row: 3;
-    display: flex;
-    flex-direction: column;
-    width: 60%;
+    height: 30vh;
+    width: 40vw;
     margin: 0rem auto;
     text-align: center;
     background-image: url(/dist/img/dogRunning.jpg);
     background-size: 100% 100%;
+    background-position: center;
     background-repeat: no-repeat;
-    height: 30rem;
     position: relative;
     margin-bottom: 5rem; }
     .pageTop-img2_arrow {
@@ -919,12 +921,14 @@ h3 {
         height: 5vh;
         margin: 3rem 0rem 0rem 0rem; }
 
+/* screen size 1024px */
 @media (max-width: 1024px) {
   .featured {
     margin: 0rem 2rem 5rem 2rem; }
     .featured-main_img {
       width: 35vw; } }
 
+/* tablet style */
 @media (max-width: 769px) {
   .pageTop-img1 {
     width: 94%;
@@ -941,6 +945,7 @@ h3 {
   .featured-link_title {
     font-size: 3vw; } }
 
+/* mobile style */
 @media (max-width: 426px) {
   .pageTop-img1 {
     width: 94%;
@@ -980,6 +985,7 @@ h3 {
   .pageTop-summaryText {
     margin-top: -2rem; } }
 
+/* service page */
 .servicesTitle {
   text-align: center;
   margin: 4rem 0rem 6rem 0rem;
@@ -1063,10 +1069,12 @@ h3 {
     background-repeat: no-repeat;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; }
 
+/* media query large screen */
 @media (max-width: 1025px) {
   .products-service_text {
     font-size: 1.3vw; } }
 
+/* tablet style */
 @media (max-width: 769px) {
   .products {
     grid-template-columns: repeat(2, auto); }
@@ -1080,6 +1088,7 @@ h3 {
       .products-service_button {
         width: 12vw; } }
 
+/* mobile style */
 @media (max-width: 426px) {
   .servicesTitle {
     margin: 1rem 0rem 7rem 0rem;

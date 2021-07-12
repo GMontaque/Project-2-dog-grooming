@@ -1,3 +1,5 @@
+/* about and contact page */
+
 .personal {
 	display: grid;
 	grid-template-columns: repeat(2, auto);
@@ -112,7 +114,7 @@
 	}
 }
 
-// mobile style
+/* tablet style - about and contact page */
 
 @media (max-width: 769px) {
 	// 	.contact {
@@ -165,7 +167,7 @@
 	}
 }
 
-// mobile style
+/* mobile style - about and contact page */
 
 @media (max-width: 426px) {
 	.personal {

@@ -1,3 +1,5 @@
+/* service page */
+
 .servicesTitle {
 	text-align: center;
 	margin: 4rem 0rem 6rem 0rem;
@@ -146,6 +148,8 @@
 	}
 }
 
+/* media query large screen */
+
 @media (max-width: 1025px) {
 	.products {
 		&-service {
@@ -155,7 +159,8 @@
 		}
 	}
 }
-// tablet style
+
+/* tablet style */
 
 @media (max-width: 769px) {
 	.products {
@@ -179,7 +184,7 @@
 	}
 }
 
-// mobile style
+/* mobile style */
 
 @media (max-width: 426px) {
 	.servicesTitle {

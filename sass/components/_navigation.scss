@@ -1,4 +1,4 @@
-// pc navbar style
+/* pc navbar style */
 .nav {
 	height: 100vh;
 	width: 25vw;
@@ -7,11 +7,14 @@
 	flex-direction: column;
 	align-items: center;
 	font-size: 2vw;
+	border: red 2px solid;
+	background-color: lightblue;
+
 	// display: grid;
 	// grid-template-columns: minmax(100%);
 
 	&-logo {
-		/*! logo image nav bar*/
+		/* logo image nav bar*/
 		width: 50%;
 		height: auto;
 		margin: 2rem;
@@ -32,17 +35,17 @@
 	}
 
 	li:first-of-type {
-		/*! style for first nav link*/
+		/* style for first nav link*/
 		border-top: solid 2px black;
 	}
 
 	li:last-of-type {
-		/*! style for last nav link */
+		/* style for last nav link */
 		margin-bottom: 2rem;
 	}
 
 	&-item {
-		/*! nav links*/
+		/* nav links*/
 		list-style: none;
 		width: 100%;
 		border-bottom: solid 2px black;
@@ -107,6 +110,7 @@
 	}
 }
 
+/*  tablet Nav Styles  */
 @media (max-width: 769px) {
 	.nav-item a {
 		font-size: 2vw;
@@ -118,9 +122,8 @@
 	}
 }
 
-/*************************** Mobile Nav Styles  **************************/
+/*  Mobile Nav Styles  */
 
-// mobile nav style
 @media (max-width: 426px) {
 	.nav {
 		display: none;
@@ -361,8 +364,6 @@
 .navMobile-phone {
 	display: flex;
 	flex-direction: row;
-
-	/* /font-size: 2rem; - not needed/ */
 	margin: 1rem 0rem;
 
 	justify-content: center;
@@ -376,8 +377,6 @@
 .navMobile-email {
 	display: flex;
 	flex-direction: row;
-
-	/* font-size: 2rem; */
 	align-items: center;
 	justify-content: center;
 }

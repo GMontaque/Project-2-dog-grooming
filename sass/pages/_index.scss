@@ -1,22 +1,43 @@
+/* homepage */
+
 .pageTop {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: repeat(3, auto);
 
 	&-img1 {
-		grid-row: 1;
-		display: flex;
-		flex-direction: column;
-		width: 80%;
-		margin: 0rem auto;
-		text-align: center;
-		background-image: url(/dist/img/dogRelax.jpg);
-		background-size: 100% auto;
+		height: 50vh;
+		width: 50vw;
+		background-size: 100% 120%;
 		background-position: center;
 		background-repeat: no-repeat;
-		height: 30rem;
+		background-image: linear-gradient(
+				to right bottom,
+				rgba(20, 2, 2, 0.7),
+				rgba(36, 6, 6, 0.7)
+			),
+			url(/dist/img/dogRelax.jpg);
+
+		margin: 0rem auto;
+		text-align: center;
 		position: relative;
 		margin-top: 2rem;
+
+		// background-image: linear-gradient(
+		// 		to right bottom,
+		// 		rgba(20, 2, 2, 0.7),
+		// 		rgba(36, 6, 6, 0.7)
+		// 	),
+		// 	url(img/trevi-1.jpg);
+		// grid-row: 1;
+		// display: flex;
+		// flex-direction: column;
+		// width: 80%;
+
+		// background-size: 100% auto;
+		// background-position: center;
+
+		// height: 30rem;
 
 		&_title {
 			position: absolute;
@@ -26,6 +47,7 @@
 			font-size: 5rem;
 			width: 100%;
 			margin-bottom: 9rem;
+			color: white;
 		}
 
 		&_services {
@@ -55,16 +77,14 @@
 	}
 
 	&-img2 {
-		grid-row: 3;
-		display: flex;
-		flex-direction: column;
-		width: 60%;
+		height: 30vh;
+		width: 40vw;
 		margin: 0rem auto;
 		text-align: center;
 		background-image: url(/dist/img/dogRunning.jpg);
 		background-size: 100% 100%;
+		background-position: center;
 		background-repeat: no-repeat;
-		height: 30rem;
 		position: relative;
 		margin-bottom: 5rem;
 
@@ -166,7 +186,7 @@
 	}
 }
 
-// screen size 1024px
+/* screen size 1024px */
 @media (max-width: 1024px) {
 	.featured {
 		margin: 0rem 2rem 5rem 2rem;
@@ -178,7 +198,7 @@
 	}
 }
 
-// tablet style
+/* tablet style */
 
 @media (max-width: 769px) {
 	.pageTop {
@@ -215,7 +235,7 @@
 	}
 }
 
-// mobile style
+/* mobile style */
 
 @media (max-width: 426px) {
 	.pageTop {

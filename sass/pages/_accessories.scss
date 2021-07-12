@@ -1,3 +1,5 @@
+/* accessories page*/
+
 .accessories {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -91,7 +93,7 @@
 	}
 }
 
-// mobile style
+/* mobile style */
 
 @media (max-width: 426px) {
 	.productsList {

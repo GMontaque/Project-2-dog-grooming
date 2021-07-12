@@ -1,4 +1,4 @@
-// images
+/* gallery adn reviews page */
 
 .row {
 	display: flex;
@@ -11,7 +11,7 @@
 	margin-top: 3rem;
 }
 
-/* Create four equal columns that sits next to each other */
+/* Creates columns on page */
 .column {
 	flex: 33%;
 	max-width: 33%;
@@ -24,7 +24,7 @@
 	width: 100%;
 }
 
-/*! top section reviews */
+/* top section reviews */
 
 .reviewsTop {
 	width: 100%;
@@ -168,18 +168,18 @@
 		}
 	}
 }
-/*! Slideshow container */
+/* Slideshow container */
 .slideshow-container {
 	max-width: 1000px;
 	position: relative;
 }
 
-/*! Hide the images by default */
+/* Hide the images by default */
 .mySlides {
 	display: none;
 }
 
-/*! Fading animation */
+/* Fading animation */
 .fade {
 	-webkit-animation-name: fade;
 	-webkit-animation-duration: 1.5s;
@@ -205,7 +205,7 @@
 	}
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
+/* Responsive layout - makes a two column-layout */
 @media screen and (max-width: 800px) {
 	.column {
 		flex: 50%;
@@ -214,7 +214,7 @@
 	}
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/* Responsive layout -  two columns */
 @media screen and (max-width: 600px) {
 	.column {
 		flex: 100%;
@@ -252,6 +252,9 @@
 // 		height: 45vh;
 // 	}
 // }
+
+/* tablet media query */
+
 @media (max-width: 769px) {
 	.reviewTop-1 {
 		&_customer {
@@ -261,7 +264,8 @@
 	}
 }
 
-// mobile style
+/* mobile style */
+
 @media (max-width: 426px) {
 	.row {
 		margin-bottom: 7rem;
