@@ -1026,8 +1026,8 @@ h3 {
     color: black;
     position: relative;
     color: white;
-    height: 37vh;
-    width: 20vw; }
+    height: 36vh;
+    width: 21vw; }
     .products-service-inner {
       background: grey;
       opacity: 0.9;
@@ -1051,24 +1051,20 @@ h3 {
       padding: 0.5rem;
       position: absolute;
       bottom: 0; }
-  .products-imgBackground {
-    background-image: url(/dist/img/dogGroom1.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; }
   .products-imgBackground1 {
     background-image: url(/dist/img/dogGroom1.jpg);
-    background-size: 100% 100%;
+    background-size: 115% 100%;
     background-repeat: no-repeat;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; }
   .products-imgBackground2 {
     background-image: url(/dist/img/dogGroom5.jpg);
-    background-size: 100% 100%;
+    background-size: 115% 100%;
     background-repeat: no-repeat;
+    background-position: center;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; }
   .products-imgBackground3 {
     background-image: url(/dist/img/dogShower.jpg);
-    background-size: 100% 100%;
+    background-size: 115% 100%;
     background-repeat: no-repeat;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; }
   .products-imgBackground4 {
@@ -1105,7 +1101,7 @@ h3 {
       height: 30vw;
       width: 30vw; }
       .products-service-inner {
-        height: 14rem; }
+        height: 16rem; }
       .products-service_text {
         font-size: 1.5vw; }
       .products-service_button {
@@ -1136,3 +1132,7 @@ h3 {
         width: 33vw; }
     .products:last-of-type {
       margin-bottom: 10rem; } }
+
+@media (max-width: 321px) {
+  .products-service {
+    height: 40vh; } }
