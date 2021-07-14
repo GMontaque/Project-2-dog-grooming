@@ -12,22 +12,6 @@ function manage(emailForm) {
 	}
 }
 
-// email address error pop up message
-
-let checkEmail = document.querySelector("#submit");
-checkEmail.addEventListener("click", checker);
-function checker() {
-	let inputText = document.querySelector("#emailAddress");
-	var mailformat = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
-	if (inputText.value.match(mailformat)) {
-		null;
-	} else {
-		alert(
-			"Email address should be entered in the following format: email@tester.com"
-		);
-	}
-}
-
 /**********************reset submitted form************************************/
 
 function resetForms() {
@@ -43,3 +27,19 @@ function resetForms() {
 		return;
 	}
 }
+
+// old email address error pop up message
+
+// let checkEmail = document.querySelector("#submit");
+// checkEmail.addEventListener("click", checker);
+// function checker() {
+// 	let inputText = document.querySelector("#emailAddress");
+// 	var mailformat = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+// 	if (inputText.value.match(mailformat)) {
+// 		null;
+// 	} else {
+// 		alert(
+// 			"Email address should be entered in the following format: email@tester.com"
+// 		);
+// 	}
+// }
