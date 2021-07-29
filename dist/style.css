@@ -903,6 +903,8 @@ h3 {
       object-fit: cover;
       width: 30vw;
       height: 60vh; }
+    .featured-main_text {
+      padding: 0rem 1rem; }
     .featured-main_button {
       width: 50%;
       margin: 2rem 0rem;
@@ -915,11 +917,11 @@ h3 {
       width: 30vw;
       height: 20vh; }
     .featured-link_title {
-      font-size: 2rem;
-      margin-bottom: 0.5rem; }
+      font-size: 2.5rem;
+      margin: 0rem 0rem 0.5rem 1rem; }
     .featured-link_text {
       font-size: 1.5rem;
-      margin-bottom: 0.5rem; }
+      margin: 0rem 0.5rem 0.5rem 1rem; }
     .featured-link a {
       float: right; }
       .featured-link a .featured-second_button {
@@ -995,6 +997,8 @@ h3 {
       width: 83vw; }
       .featured-main_img {
         width: 82vw; }
+      .featured-main_text {
+        font-size: 1.5rem; }
       .featured-main_button {
         width: 40vw; }
     .featured-link {
@@ -1048,7 +1052,6 @@ h3 {
       height: 4vh;
       justify-self: end;
       color: white;
-      padding: 0.5rem;
       position: absolute;
       bottom: 0; }
   .products-imgBackground1 {
