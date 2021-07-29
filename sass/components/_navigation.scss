@@ -45,9 +45,12 @@
 		margin-bottom: 2rem;
 	}
 
+	li {
+		list-style: none;
+	}
+
 	&-item {
 		/* nav links*/
-		list-style: none;
 		width: 100%;
 		border-bottom: solid 2px black;
 		padding: 1.5rem 0rem;
@@ -110,6 +113,13 @@
 			margin-bottom: 0.4rem;
 			color: #0f0f89;
 		}
+	}
+}
+
+/*  nav bar big screen height on shorter screens  */
+@media (max-height: 665px) {
+	.nav-item {
+		padding: 1rem 0rem !important;
 	}
 }
 

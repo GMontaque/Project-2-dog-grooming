@@ -106,9 +106,10 @@ h3 {
   .nav li:last-of-type {
     /* style for last nav link */
     margin-bottom: 2rem; }
+  .nav li {
+    list-style: none; }
   .nav-item {
     /* nav links*/
-    list-style: none;
     width: 100%;
     border-bottom: solid 2px black;
     padding: 1.5rem 0rem; }
@@ -151,6 +152,11 @@ h3 {
       margin-left: 0.5rem;
       margin-bottom: 0.4rem;
       color: #0f0f89; }
+
+/*  nav bar big screen height on shorter screens  */
+@media (max-height: 665px) {
+  .nav-item {
+    padding: 1rem 0rem !important; } }
 
 /*  tablet Nav Styles  */
 @media (max-width: 769px) {
@@ -459,6 +465,10 @@ h3 {
       text-align: center;
       margin-bottom: 1rem;
       font-size: 5rem; }
+    .contact-R_subText {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 1vw; }
     .contact-R_form {
       display: flex;
       flex-direction: column;
@@ -498,7 +508,9 @@ h3 {
       margin-bottom: 5rem;
       height: 44rem; }
       .contact-R_title {
-        font-size: 6vw; } }
+        font-size: 6vw; }
+      .contact-R_subText {
+        font-size: 2vw; } }
 
 /* mobile style - about and contact page */
 @media (max-width: 426px) {
@@ -520,7 +532,9 @@ h3 {
     .contact-R {
       margin-top: 3rem;
       margin-bottom: 5rem;
-      height: 44rem; } }
+      height: 44rem; }
+      .contact-R_subText {
+        font-size: 4vw; } }
 
 @media (max-width: 375px) {
   .contact-L_address_text {
